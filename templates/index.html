@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        .carousel-indicators {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 5px;
+            z-index: 10;
+        }
+        
+        .carousel-indicator {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .carousel-indicator.active {
+            background: white;
+            transform: scale(1.2);
+        }
+        
+        .product-image {
+            position: relative;
+        }
+
+        /* Estilo para el botón de volver al admin */
+        .admin-return-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 15px;
+            background-color: var(--gold-primary);
+            color: white;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-weight: 500;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .admin-return-btn:hover {
+            background-color: #c6992e;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <div class="container header-content">
+                <div class="logo-section">
+                    <img src="{{ url_for('static', filename='images/logo1.png') }}" alt="Beauty" class="logo">
+                    <div class="brand-center">
+                        <h1>𝐵𝑒𝒶𝓊𝓉𝓎</h1>
+                    </div>
+                </div>
+                <div class="header-right">
+                    {% if session.get('admin_browsing') and session.get('admin_logueado') %}
+                    <a href="/store-to-admin" class="admin-return-btn">
+                        <i class="fas fa-cog"></i> Volver al Admin
+                    </a>
+                    {% endif %}
+                    
+                    <div class="cart-icon" id="cartIcon">
+                        <i class="fas fa-shopping-bag"></i> 
+                        <span class="cart-count" id="cartCount">0</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="filters-section">
+            <div class="container">
+                <div class="filters-header">
+                    <h2 id="currentCategory">Productos de belleza</h2>
+                    <div class="header-right-section">
+                        <span id="resultsCount">{{ productos|length }} resultados</span>
+                        <div class="dropdown">
+                            <button class="dropdown-toggle" id="dropdownToggle">
+                                <i class="fas fa-spa"></i> Categorías
+                            </button>
+                            <div class="dropdown-content" id="dropdownContent">
+                                <div class="category-filters">
+                                    <button class="category-filter active" data-category="todos">
+                                        <i class="fas fa-star"></i> Todos los productos
+                                    </button>
+                                    {% for categoria in categorias %}
+                                    <button class="category-filter" data-category="{{ categoria.nombre }}">
+                                        <i class="{{ categoria.icono }}"></i> {{ categoria.nombre }}
+                                    </button>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main class="container">
+            <div class="products-grid" id="productsGrid">
+                {% for producto in productos %}
+                <div class="product-card" data-category="{{ producto.categoria }}">
+                    {% if producto.get('imagenes') and producto.imagenes|length > 1 %}
+                    <div class="product-image">
+                        {% for imagen in producto.imagenes %}
+                        <img src="{{ url_for('static', filename='images/products/' + imagen) }}" 
+                             alt="{{ producto.nombre }}" 
+                             {% if loop.first %}style="opacity: 1"{% else %}style="opacity: 0; position: absolute; top: 0; left: 0;"{% endif %}>
+                        {% endfor %}
+                    </div>
+                    {% else %}
+                    <div class="product-image">
+                        <img src="{{ url_for('static', filename='images/products/' + (producto.imagen_principal if producto.get('imagen_principal') else producto.imagen if producto.imagen else '')) }}" 
+                             alt="{{ producto.nombre }}">
+                    </div>
+                    {% endif %}
+                    <div class="product-info">
+                        <h3>{{ producto.nombre }}</h3>
+                        <p class="price">${{ producto.precio }}</p>
+                        <button class="add-to-cart" data-id="{{ producto.id }}" data-name="{{ producto.nombre }}" data-price="{{ producto.precio }}">
+                            <i class="fas fa-cart-plus"></i> Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </main>
+
+        <!-- Modal del carrito -->
+        <div class="modal" id="cartModal">
+            <div class="modal-content">
+                <span class="close" id="closeModal">&times;</span>
+                <h2><i class="fas fa-shopping-bag"></i> Carrito de compras</h2>
+                
+                <div class="order-details">
+                    <h3>Detalles del pedido:</h3>
+                    <div id="orderItems">
+                        <!-- Los productos se agregarán aquí dinámicamente -->
+                    </div>
+                    
+                    <div class="order-total">
+                        <strong>Total a pagar:</strong> 
+                        <span id="orderTotal">$0.00</span>
+                    </div>
+                </div>
+                
+                <div class="modal-buttons">
+                    <button id="confirmOrder" class="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> Completar pedido por WhatsApp
+                    </button>
+                    <button id="continueShopping">Seguir comprando</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="store-location">
+                <h3><i class="fas fa-map-marker-alt"></i> Ubicación de la tienda</h3>
+                <p>Av. Principal #123, Ciudad de México</p>
+                <p><i class="far fa-clock"></i> Horario: Lunes a Sábado 10:00 AM - 8:00 PM</p>
+            </div>
+            <div class="footer-content">
+                <div class="social-section">
+                    <h3>Síganos en</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-info">
+                <p>© 2023 Beauty. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

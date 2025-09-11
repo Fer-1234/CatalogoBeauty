@@ -1,0 +1,1474 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración - Beauty</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background-color: #fff5f7;
+            font-size: 14px;
+            color: #5a3d3d;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            width: 100%;
+        }
+        
+        /* Header */
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            padding: 12px 0;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo {
+            height: 90px;
+            width: auto;
+            border-radius: 50%;
+        }
+        
+        .brand-center {
+            text-align: center;
+        }
+        
+        .brand-center h1 {
+            font-size: 32px;
+            color: #ff9eb6;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 1px;
+            margin: 0;
+        }
+        
+        /* Admin Container */
+        .admin-container {
+            padding: 20px;
+            width: 100%;
+            flex: 1;
+        }
+        
+        .admin-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+        
+        .admin-header h2 {
+            font-size: 20px;
+            color: #d8708f;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .admin-actions {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .admin-btn {
+            padding: 8px 15px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        
+        .logout-btn {
+            background-color: #ff6b6b;
+            color: white;
+        }
+        
+        .logout-btn:hover {
+            background-color: #ee5253;
+        }
+        
+        .back-btn {
+            background-color: #d4af37;
+            color: white;
+        }
+        
+        .back-btn:hover {
+            background-color: #c6992e;
+        }
+        
+        /* Tabs */
+        .admin-tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ffeef2;
+            justify-content: center;
+        }
+        
+        .tab-btn {
+            padding: 10px 20px;
+            border: none;
+            background: none;
+            cursor: pointer;
+            font-weight: 500;
+            color: #9e7c7c;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease;
+            font-size: 15px;
+        }
+        
+        .tab-btn.active {
+            color: #ff9eb6;
+            border-bottom-color: #ff9eb6;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        /* Forms */
+        .add-product-form, .add-category-form, .products-table-container, .categories-list {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            margin-bottom: 20px;
+        }
+        
+        .add-product-form h3, .products-table-container h3, .add-category-form h3, .categories-list h3 {
+            font-size: 18px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: #5a3d3d;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .form-row {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .form-group {
+            flex: 1;
+            min-width: 250px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 500;
+            color: #5a3d3d;
+            font-size: 14px;
+        }
+        
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #ffeef2;
+            border-radius: 6px;
+            font-size: 14px;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .form-group input:focus, .form-group select:focus {
+            border-color: #ff9eb6;
+            outline: none;
+        }
+        
+        .submit-btn {
+            padding: 12px 20px;
+            background-color: #ff9eb6;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background-color 0.3s;
+        }
+        
+        .submit-btn:hover {
+            background-color: #d8708f;
+        }
+        
+        /* Products Table */
+        .products-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        
+        .products-table th {
+            background-color: #ff9eb6;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            border: none;
+            font-size: 14px;
+        }
+        
+        .products-table td {
+            padding: 12px;
+            border-bottom: 1px solid #ffeef2;
+            vertical-align: top;
+        }
+        
+        .products-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .products-table tr:hover {
+            background-color: #fffafb;
+        }
+        
+        .product-input {
+            width: 100%;
+            padding: 8px 10px;
+            border: 1px solid #ffeef2;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: border-color 0.3s ease;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .product-input:focus {
+            border-color: #ff9eb6;
+            outline: none;
+        }
+        
+        .action-cell {
+            white-space: nowrap;
+            width: 120px;
+        }
+        
+        /* Buttons */
+        .update-btn, .delete-btn, .edit-btn {
+            padding: 6px 10px;
+            font-size: 13px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 5px;
+            width: 100%;
+            justify-content: center;
+        }
+        
+        .update-btn {
+            background-color: #ff9eb6;
+            color: white;
+        }
+        
+        .update-btn:hover {
+            background-color: #d8708f;
+        }
+        
+        .delete-btn {
+            background-color: #dc3545;
+            color: white;
+        }
+        
+        .delete-btn:hover {
+            background-color: #c82333;
+        }
+        
+        .edit-btn {
+            background-color: #d4af37;
+            color: white;
+        }
+        
+        .edit-btn:hover {
+            background-color: #c6992e;
+        }
+        
+        /* Image Management */
+        .image-gallery {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin: 10px 0;
+        }
+        
+        .image-item {
+            position: relative;
+            width: 70px;
+            height: 70px;
+            border-radius: 5px;
+            overflow: hidden;
+            border: 1px solid transparent;
+        }
+        
+        .image-item.main {
+            border-color: #ff9eb6;
+            box-shadow: 0 0 8px rgba(255, 158, 182, 0.5);
+        }
+        
+        .image-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .image-actions {
+            position: absolute;
+            top: 3px;
+            right: 3px;
+            display: flex;
+            gap: 4px;
+        }
+        
+        .image-btn {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .set-main-btn {
+            background: #28a745;
+            color: white;
+        }
+        
+        .delete-image-btn {
+            background: #dc3545;
+            color: white;
+        }
+        
+        .upload-section {
+            margin-top: 10px;
+        }
+        
+        .upload-btn {
+            padding: 6px 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 13px;
+        }
+        
+        .upload-btn:hover {
+            background: #0056b3;
+        }
+        
+        .image-preview {
+            max-width: 120px;
+            max-height: 120px;
+            margin-top: 8px;
+            border-radius: 5px;
+            display: none;
+        }
+        
+        /* Categories List */
+        .category-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px;
+            border-bottom: 1px solid #ffeef2;
+        }
+        
+        .category-item:last-child {
+            border-bottom: none;
+        }
+        
+        .category-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .category-actions {
+            display: flex;
+            gap: 8px;
+        }
+        
+        /* Icon Selector */
+        .icon-selector {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 8px;
+            margin-top: 8px;
+            max-height: 150px;
+            overflow-y: auto;
+            padding: 10px;
+            border: 1px solid #ffeef2;
+            border-radius: 6px;
+        }
+        
+        .icon-option {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px;
+            border: 1px solid #ffeef2;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 16px;
+        }
+        
+        .icon-option:hover {
+            background-color: #fff5f7;
+            border-color: #ff9eb6;
+        }
+        
+        .icon-option.selected {
+            background-color: #ff9eb6;
+            color: white;
+            border-color: #ff9eb6;
+        }
+        
+        .selected-icon-preview {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 8px;
+            padding: 8px;
+            background-color: #fffafb;
+            border-radius: 5px;
+            border: 1px dashed #ff9eb6;
+            font-size: 14px;
+        }
+        
+        .selected-icon-preview i {
+            font-size: 18px;
+            color: #d8708f;
+        }
+        
+        /* Toast Notification - CENTRADO */
+        .toast {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%) translateY(-100px);
+            padding: 12px 20px;
+            border-radius: 8px;
+            background-color: #ff9eb6;
+            color: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: transform 0.5s ease;
+            font-size: 14px;
+            max-width: 400px;
+            font-weight: 500;
+            text-align: center;
+        }
+        
+        .toast.show {
+            transform: translateX(-50%) translateY(0);
+        }
+        
+        .toast.error {
+            background-color: #f44336;
+        }
+        
+        .toast.info {
+            background-color: #2196F3;
+        }
+        
+        .toast i {
+            font-size: 18px;
+        }
+        
+        /* Confirmation Modal */
+        .confirmation-modal {
+            display: none;
+            position: fixed;
+            z-index: 10000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        
+        .confirmation-content {
+            background-color: white;
+            margin: 15% auto;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .confirmation-content h3 {
+            margin: 0 0 15px 0;
+            font-size: 18px;
+            color: #5a3d3d;
+        }
+        
+        .confirmation-content p {
+            margin: 0 0 20px 0;
+            font-size: 15px;
+            color: #9e7c7c;
+        }
+        
+        .confirmation-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .confirmation-buttons button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 14px;
+        }
+        
+        .confirm-btn {
+            background-color: #ff9eb6;
+            color: white;
+        }
+        
+        .confirm-btn:hover {
+            background-color: #d8708f;
+        }
+        
+        .cancel-btn {
+            background-color: #9e7c7c;
+            color: white;
+        }
+        
+        .cancel-btn:hover {
+            background-color: #7d5d5d;
+        }
+        
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        
+        .modal-content {
+            background-color: white;
+            margin: 10% auto;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 500px;
+            position: relative;
+        }
+        
+        .close-modal {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 24px;
+            cursor: pointer;
+            color: #9e7c7c;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .admin-header {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+            
+            .admin-actions {
+                width: 100%;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            
+            .form-row {
+                flex-direction: column;
+            }
+            
+            .form-group {
+                min-width: 100%;
+            }
+            
+            .icon-selector {
+                grid-template-columns: repeat(4, 1fr);
+            }
+            
+            .products-table {
+                font-size: 13px;
+            }
+            
+            .products-table th, 
+            .products-table td {
+                padding: 8px 6px;
+            }
+            
+            .action-cell {
+                width: 100px;
+            }
+            
+            .toast {
+                max-width: 300px;
+                font-size: 13px;
+                padding: 10px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo-section">
+                <img src="{{ url_for('static', filename='images/logo1.png') }}" alt="Beauty" class="logo">
+                <div class="brand-center">
+                    <h1>𝐵𝑒𝒶𝓊𝓉𝓎 - Admin</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="admin-container">
+        <div class="admin-header">
+            <h2><i class="fas fa-cog"></i> Panel de Administración</h2>
+            <div class="admin-actions">
+                <a href="/admin-to-store" class="admin-btn back-btn">
+                    <i class="fas fa-store"></i> Ir a Tienda
+                </a>
+                <a href="{{ url_for('logout') }}" class="admin-btn logout-btn">
+                    <i class="fas fa-sign-out-alt"></i> Cerrar Sesión
+                </a>
+            </div>
+        </div>
+        
+        <div class="admin-tabs">
+            <button class="tab-btn active" data-tab="products">Productos</button>
+            <button class="tab-btn" data-tab="categories">Categorías</button>
+        </div>
+        
+        <!-- Pestaña de Productos -->
+        <div id="products-tab" class="tab-content active">
+            <div class="add-product-form">
+                <h3><i class="fas fa-box"></i> Agregar Nuevo Producto</h3>
+                <form id="addProductForm" enctype="multipart/form-data">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="productName">Nombre:</label>
+                            <input type="text" id="productName" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="productPrice">Precio ($):</label>
+                            <input type="number" id="productPrice" name="precio" step="0.01" min="0" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="productCategory">Categoría:</label>
+                            <select id="productCategory" name="categoria" required>
+                                <option value="">Seleccionar categoría</option>
+                                {% for categoria in categorias %}
+                                <option value="{{ categoria.nombre }}">{{ categoria.nombre }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="productImage">Imagen:</label>
+                            <input type="file" id="productImage" name="image" accept="image/*">
+                            <small>Formatos: PNG, JPG, JPEG, GIF, WEBP</small>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-plus"></i> Agregar Producto
+                    </button>
+                </form>
+            </div>
+            
+            <div class="products-table-container">
+                <h3><i class="fas fa-boxes"></i> Gestión de Productos</h3>
+                
+                <div class="table-responsive">
+                    <table class="products-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th>Categoría</th>
+                                <th>Imágenes</th>
+                                <th class="action-cell">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for producto in productos %}
+                            <tr data-product-id="{{ producto.id }}">
+                                <td><strong>{{ producto.id }}</strong></td>
+                                <td>
+                                    <input type="text" id="nombre-{{ producto.id }}" value="{{ producto.nombre }}" class="product-input" data-original-value="{{ producto.nombre }}">
+                                </td>
+                                <td>
+                                    <input type="number" id="precio-{{ producto.id }}" value="{{ producto.precio }}" step="0.01" min="0" class="product-input" data-original-value="{{ producto.precio }}">
+                                </td>
+                                <td>
+                                    <select id="categoria-{{ producto.id }}" class="product-input" data-original-value="{{ producto.categoria }}">
+                                        {% for categoria in categorias %}
+                                        <option value="{{ categoria.nombre }}" {% if categoria.nombre == producto.categoria %}selected{% endif %}>
+                                            {{ categoria.nombre }}
+                                        </option>
+                                        {% endfor %}
+                                    </select>
+                                </td>
+                                <td>
+                                    <div class="image-gallery" id="gallery-{{ producto.id }}">
+                                        {% for imagen in producto.get('imagenes', []) %}
+                                        <div class="image-item {% if imagen == producto.get('imagen_principal', '') %}main{% endif %}" data-image="{{ imagen }}">
+                                            <img src="{{ url_for('static', filename='images/products/' + imagen) }}" alt="Imagen {{ loop.index }}">
+                                            <div class="image-actions">
+                                                <button class="image-btn set-main-btn" data-product-id="{{ producto.id }}" data-image="{{ imagen }}" title="Principal">
+                                                    <i class="fas fa-star"></i>
+                                                </button>
+                                                <button class="image-btn delete-image-btn" data-product-id="{{ producto.id }}" data-image="{{ imagen }}" title="Eliminar">
+                                                    <i class="fas fa-trash"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        {% endfor %}
+                                    </div>
+                                    <div class="upload-section">
+                                        <input type="file" id="upload-{{ producto.id }}" accept="image/*" style="display: none;">
+                                        <button class="upload-btn" onclick="document.getElementById('upload-{{ producto.id }}').click()">
+                                            <i class="fas fa-plus"></i> Agregar Imagen
+                                        </button>
+                                        <img id="preview-{{ producto.id }}" class="image-preview">
+                                    </div>
+                                </td>
+                                <td class="action-cell">
+                                    <button class="update-btn" data-product-id="{{ producto.id }}">
+                                        <i class="fas fa-save"></i> Guardar
+                                    </button>
+                                    <button class="delete-btn" data-product-id="{{ producto.id }}">
+                                        <i class="fas fa-trash"></i> Eliminar
+                                    </button>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Pestaña de Categorías -->
+        <div id="categories-tab" class="tab-content">
+            <div class="add-category-form">
+                <h3><i class="fas fa-tag"></i> Agregar Nueva Categoría</h3>
+                <form id="addCategoryForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="categoryName">Nombre:</label>
+                            <input type="text" id="categoryName" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Icono:</label>
+                            <div class="selected-icon-preview" id="iconPreview">
+                                <i class="fas fa-tag"></i>
+                                <span>fas fa-tag</span>
+                            </div>
+                            <input type="hidden" id="categoryIcon" name="icono" value="fas fa-tag">
+                            <div class="icon-selector" id="iconSelector">
+                                <div class="icon-option selected" data-icon="fas fa-tag"><i class="fas fa-tag"></i></div>
+                                <div class="icon-option" data-icon="fas fa-smile"><i class="fas fa-smile"></i></div>
+                                <div class="icon-option" data-icon="fas fa-spa"><i class="fas fa-spa"></i></div>
+                                <div class="icon-option" data-icon="fas fa-palette"><i class="fas fa-palette"></i></div>
+                                <div class="icon-option" data-icon="fas fa-hand-sparkles"><i class="fas fa-hand-sparkles"></i></div>
+                                <div class="icon-option" data-icon="fas fa-soap"><i class="fas fa-soap"></i></div>
+                                <div class="icon-option" data-icon="fas fa-star"><i class="fas fa-star"></i></div>
+                                <div class="icon-option" data-icon="fas fa-heart"><i class="fas fa-heart"></i></div>
+                                <div class="icon-option" data-icon="fas fa-gem"><i class="fas fa-gem"></i></div>
+                                <div class="icon-option" data-icon="fas fa-magic"><i class="fas fa-magic"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-plus"></i> Agregar
+                    </button>
+                </form>
+            </div>
+            
+            <div class="categories-list">
+                <h3><i class="fas fa-tags"></i> Lista de Categorías</h3>
+                {% for categoria in categorias %}
+                <div class="category-item">
+                    <div class="category-info">
+                        <i class="{{ categoria.icono }}"></i>
+                        <span>{{ categoria.nombre }}</span>
+                    </div>
+                    <div class="category-actions">
+                        <button class="edit-btn" data-categoria-id="{{ categoria.id }}" data-categoria-nombre="{{ categoria.nombre }}" data-categoria-icono="{{ categoria.icono }}">
+                            <i class="fas fa-edit"></i> Editar
+                        </button>
+                        <button class="delete-btn" data-categoria-id="{{ categoria.id }}" data-categoria-nombre="{{ categoria.nombre }}">
+                            <i class="fas fa-trash"></i> Eliminar
+                        </button>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para editar categoría -->
+    <div id="editCategoryModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="cerrarModal()">&times;</span>
+            <h3><i class="fas fa-edit"></i> Editar Categoría</h3>
+            <form id="editCategoryForm">
+                <input type="hidden" id="editCategoryId" name="id">
+                <div class="form-group">
+                    <label for="editCategoryName">Nombre:</label>
+                    <input type="text" id="editCategoryName" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label>Icono:</label>
+                    <div class="selected-icon-preview" id="editIconPreview">
+                        <i class="fas fa-tag"></i>
+                        <span>fas fa-tag</span>
+                    </div>
+                    <input type="hidden" id="editCategoryIcon" name="icono" value="fas fa-tag">
+                    <div class="icon-selector" id="editIconSelector">
+                        <div class="icon-option selected" data-icon="fas fa-tag"><i class="fas fa-tag"></i></div>
+                        <div class="icon-option" data-icon="fas fa-smile"><i class="fas fa-smile"></i></div>
+                        <div class="icon-option" data-icon="fas fa-spa"><i class="fas fa-spa"></i></div>
+                        <div class="icon-option" data-icon="fas fa-palette"><i class="fas fa-palette"></i></div>
+                        <div class="icon-option" data-icon="fas fa-hand-sparkles"><i class="fas fa-hand-sparkles"></i></div>
+                        <div class="icon-option" data-icon="fas fa-soap"><i class="fas fa-soap"></i></div>
+                        <div class="icon-option" data-icon="fas fa-star"><i class="fas fa-star"></i></div>
+                        <div class="icon-option" data-icon="fas fa-heart"><i class="fas fa-heart"></i></div>
+                        <div class="icon-option" data-icon="fas fa-gem"><i class="fas fa-gem"></i></div>
+                        <div class="icon-option" data-icon="fas fa-magic"><i class="fas fa-magic"></i></div>
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-save"></i> Guardar
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal de confirmación -->
+    <div id="confirmationModal" class="confirmation-modal">
+        <div class="confirmation-content">
+            <h3 id="confirmationTitle">Confirmar acción</h3>
+            <p id="confirmationMessage">¿Estás seguro de que quieres realizar esta acción?</p>
+            <div class="confirmation-buttons">
+                <button id="confirmAction" class="confirm-btn">Aceptar</button>
+                <button id="cancelAction" class="cancel-btn">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast flotante CENTRADO -->
+    <div id="toast" class="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage">Operación realizada con éxito</span>
+    </div>
+
+    <script>
+        // Variables globales
+        let pendingAction = null;
+        let pendingActionParams = null;
+
+        // Inicializar cuando el DOM esté listo
+        document.addEventListener('DOMContentLoaded', function() {
+            initIconSelector('iconSelector', 'categoryIcon', 'iconPreview');
+            initEventListeners();
+            initTabs();
+        });
+
+        // Inicializar selectores de iconos
+        function initIconSelector(selectorId, inputId, previewId) {
+            const defaultIcon = document.getElementById(inputId).value;
+            selectIcon(defaultIcon, inputId, previewId, selectorId);
+            
+            // Event listeners para botones de iconos
+            document.querySelectorAll(`#${selectorId} .icon-option`).forEach(option => {
+                option.addEventListener('click', function() {
+                    const icon = this.getAttribute('data-icon');
+                    selectIcon(icon, inputId, previewId, selectorId);
+                });
+            });
+        }
+
+        // Seleccionar un icono
+        function selectIcon(icon, inputId, previewId, selectorId) {
+            document.getElementById(inputId).value = icon;
+            
+            const preview = document.getElementById(previewId);
+            preview.innerHTML = `<i class="${icon}"></i><span>${icon}</span>`;
+            
+            // Marcar como seleccionado
+            const selector = document.getElementById(selectorId);
+            selector.querySelectorAll('.icon-option').forEach(opt => {
+                opt.classList.remove('selected');
+                if (opt.getAttribute('data-icon') === icon) {
+                    opt.classList.add('selected');
+                }
+            });
+        }
+
+        // Inicializar pestañas
+        function initTabs() {
+            document.querySelectorAll('.tab-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all tabs
+                    document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+                    document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+                    
+                    // Add active class to clicked tab
+                    this.classList.add('active');
+                    const tabId = this.getAttribute('data-tab') + '-tab';
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+        }
+
+        // Inicializar event listeners
+        function initEventListeners() {
+            // Agregar nuevo producto
+            document.getElementById('addProductForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                agregarProducto();
+            });
+
+            // Agregar nueva categoría
+            document.getElementById('addCategoryForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                agregarCategoria();
+            });
+
+            // Editar categoría
+            document.getElementById('editCategoryForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                actualizarCategoria();
+            });
+
+            // Event listeners para botones de editar categoría
+            document.querySelectorAll('.edit-btn[data-categoria-id]').forEach(button => {
+                button.addEventListener('click', function() {
+                    const id = this.getAttribute('data-categoria-id');
+                    const nombre = this.getAttribute('data-categoria-nombre');
+                    const icono = this.getAttribute('data-categoria-icono');
+                    editarCategoria(id, nombre, icono);
+                });
+            });
+
+            // Event listeners para botones de eliminar producto
+            document.querySelectorAll('.delete-btn[data-product-id]').forEach(button => {
+                button.addEventListener('click', function() {
+                    const productId = this.getAttribute('data-product-id');
+                    showConfirmation(
+                        'Eliminar Producto', 
+                        '¿Estás seguro de que quieres eliminar este producto? Esta acción no se puede deshacer.',
+                        () => eliminarProducto(productId)
+                    );
+                });
+            });
+
+            // Event listeners para botones de eliminar categoría
+            document.querySelectorAll('.delete-btn[data-categoria-id]').forEach(button => {
+                button.addEventListener('click', function() {
+                    const id = this.getAttribute('data-categoria-id');
+                    const nombre = this.getAttribute('data-categoria-nombre');
+                    showConfirmation(
+                        'Eliminar Categoría', 
+                        `¿Estás seguro de que quieres eliminar la categoría "${nombre}"?`,
+                        () => eliminarCategoria(id, nombre)
+                    );
+                });
+            });
+
+            // Event listeners para botones de actualización
+            document.querySelectorAll('.update-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const productId = this.getAttribute('data-product-id');
+                    actualizarProducto(productId);
+                });
+            });
+
+            // Event listeners para botones de imágenes
+            document.querySelectorAll('.set-main-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const productId = this.getAttribute('data-product-id');
+                    const imageName = this.getAttribute('data-image');
+                    setMainImage(productId, imageName);
+                });
+            });
+
+            document.querySelectorAll('.delete-image-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const productId = this.getAttribute('data-product-id');
+                    const imageName = this.getAttribute('data-image');
+                    showConfirmation(
+                        'Eliminar Imagen', 
+                        '¿Estás seguro de que quieres eliminar esta imagen?',
+                        () => deleteImage(productId, imageName)
+                    );
+                });
+            });
+
+            // Event listeners para uploads
+            document.querySelectorAll('input[type="file"]').forEach(input => {
+                input.addEventListener('change', function() {
+                    const productId = this.id.split('-')[1];
+                    uploadImage(productId);
+                });
+            });
+
+            // Cerrar modal al hacer clic fuera
+            window.addEventListener('click', function(e) {
+                if (e.target === document.getElementById('editCategoryModal')) {
+                    cerrarModal();
+                }
+                if (e.target === document.getElementById('confirmationModal')) {
+                    document.getElementById('confirmationModal').style.display = 'none';
+                }
+            });
+        }
+
+        // Función para agregar producto
+        function agregarProducto() {
+            const formData = new FormData(document.getElementById('addProductForm'));
+            
+            fetch('/agregar-producto', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    showToast(data.message, 'success');
+                    // Subir imagen si se seleccionó una
+                    const imageInput = document.getElementById('productImage');
+                    if (imageInput.files.length > 0 && data.id) {
+                        uploadProductImage(data.id, imageInput.files[0]);
+                    } else {
+                        setTimeout(() => location.reload(), 1500);
+                    }
+                } else {
+                    showToast(data.message, 'error');
+                }
+            })
+            .catch(error => {
+                showToast('Error al agregar producto', 'error');
+            });
+        }
+
+        // Función para subir imagen de producto
+        function uploadProductImage(productId, file) {
+            const formData = new FormData();
+            formData.append('product_id', productId);
+            formData.append('image', file);
+            
+            fetch('/upload-image', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    showToast('Producto e imagen agregados correctamente', 'success');
+                } else {
+                    showToast('Producto agregado pero error al subir imagen: ' + data.message, 'error');
+                }
+                setTimeout(() => location.reload(), 1500);
+            })
+            .catch(error => {
+                showToast('Producto agregado pero error al subir imagen', 'error');
+                setTimeout(() => location.reload(), 1500);
+            });
+        }
+
+        // Función para agregar categoría
+        function agregarCategoria() {
+            const formData = new FormData(document.getElementById('addCategoryForm'));
+            
+            fetch('/agregar-categoria', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    showToast(data.message, 'success');
+                    setTimeout(() => location.reload(), 1000);
+                } else {
+                    showToast(data.message, 'error');
+                }
+            })
+            .catch(error => {
+                showToast('Error al agregar categoría', 'error');
+            });
+        }
+
+        // Función para editar categoría
+        function editarCategoria(id, nombre, icono) {
+            document.getElementById('editCategoryId').value = id;
+            document.getElementById('editCategoryName').value = nombre;
+            selectIcon(icono, 'editCategoryIcon', 'editIconPreview', 'editIconSelector');
+            document.getElementById('editCategoryModal').style.display = 'block';
+        }
+
+        // Función para actualizar categoría
+        function actualizarCategoria() {
+            const formData = new FormData(document.getElementById('editCategoryForm'));
+            
+            fetch('/actualizar-categoria', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    showToast(data.message, 'success');
+                    cerrarModal();
+                    setTimeout(() => location.reload(), 1000);
+                } else {
+                    showToast(data.message, 'error');
+                }
+            })
+            .catch(error => {
+                showToast('Error al actualizar categoría', 'error');
+            });
+        }
+
+        // Función para eliminar categoría
+        function eliminarCategoria(id, nombre) {
+            const formData = new FormData();
+            formData.append('id', id);
+            
+            fetch('/eliminar-categoria', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    showToast(data.message, 'success');
+                    setTimeout(() => location.reload(), 1000);
+                } else {
+                    showToast(data.message, 'error');
+                }
+            })
+            .catch(error => {
+                showToast('Error al eliminar categoría', 'error');
+            });
+        }
+
+        // Función para eliminar producto
+        function eliminarProducto(id) {
+            const formData = new FormData();
+            formData.append('id', id);
+            
+            fetch('/eliminar-producto', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    showToast(data.message, 'success');
+                    setTimeout(() => location.reload(), 1000);
+                } else {
+                    showToast(data.message, 'error');
+                }
+            })
+            .catch(error => {
+                showToast('Error al eliminar producto', 'error');
+            });
+        }
+
+        // Función para actualizar producto
+        function actualizarProducto(id) {
+            const nombreInput = document.getElementById(`nombre-${id}`);
+            const precioInput = document.getElementById(`precio-${id}`);
+            const categoriaSelect = document.getElementById(`categoria-${id}`);
+            const nombre = nombreInput.value.trim();
+            const precio = precioInput.value;
+            const categoria = categoriaSelect.value;
+            const button = document.querySelector(`.update-btn[data-product-id="${id}"]`);
+            
+            // Validaciones
+            if (!nombre) {
+                showToast('El nombre del producto no puede estar vacío', 'error');
+                nombreInput.focus();
+                return;
+            }
+            
+            if (!precio || precio <= 0) {
+                showToast('El precio debe ser mayor a 0', 'error');
+                precioInput.focus();
+                return;
+            }
+            
+            if (!categoria) {
+                showToast('Debe seleccionar una categoría', 'error');
+                categoriaSelect.focus();
+                return;
+            }
+            
+            // Verificar si hay cambios reales
+            const originalNombre = nombreInput.getAttribute('data-original-value');
+            const originalPrecio = precioInput.getAttribute('data-original-value');
+            const originalCategoria = categoriaSelect.getAttribute('data-original-value');
+            
+            if (nombre === originalNombre && parseFloat(precio) === parseFloat(originalPrecio) && categoria === originalCategoria) {
+                showToast('No hay cambios que guardar', 'info');
+                return;
+            }
+            
+            // Mostrar indicador de carga
+            const originalButtonHTML = button.innerHTML;
+            button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Guardando...';
+            button.disabled = true;
+            
+            // Enviar datos al servidor
+            const formData = new FormData();
+            formData.append('id', id);
+            formData.append('nombre', nombre);
+            formData.append('precio', parseFloat(precio).toFixed(2));
+            formData.append('categoria', categoria);
+            
+            fetch('/actualizar-producto', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Error en la respuesta del servidor');
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (data.success) {
+                    showToast(data.message, 'success');
+                    
+                    // Actualizar valores originales
+                    nombreInput.setAttribute('data-original-value', nombre);
+                    precioInput.setAttribute('data-original-value', precio);
+                    categoriaSelect.setAttribute('data-original-value', categoria);
+                    
+                    // Restaurar botón después de 1 segundo
+                    setTimeout(() => {
+                        button.innerHTML = originalButtonHTML;
+                        button.disabled = false;
+                    }, 1000);
+                } else {
+                    throw new Error(data.message);
+                }
+            })
+            .catch(error => {
+                showToast('Error: ' + error.message, 'error');
+                
+                // Restaurar botón inmediatamente
+                button.innerHTML = originalButtonHTML;
+                button.disabled = false;
+            });
+        }
+
+        // Función para subir imagen
+        function uploadImage(productId) {
+            const fileInput = document.getElementById(`upload-${productId}`);
+            const file = fileInput.files[0];
+            const preview = document.getElementById(`preview-${productId}`);
+            
+            if (!file) return;
+            
+            // Mostrar preview
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                preview.src = e.target.result;
+                preview.style.display = 'block';
+            };
+            reader.readAsDataURL(file);
+            
+            // Subir imagen
+            const formData = new FormData();
+            formData.append('product_id', productId);
+            formData.append('image', file);
+            
+            fetch('/upload-image', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    showToast(data.message, 'success');
+                    // Recargar la página para ver los cambios
+                    setTimeout(() => location.reload(), 1000);
+                } else {
+                    showToast(data.message, 'error');
+                }
+            })
+            .catch(error => {
+                showToast('Error al subir la imagen', 'error');
+            });
+        }
+        
+        // Función para establecer imagen principal
+        function setMainImage(productId, imageName) {
+            const formData = new FormData();
+            formData.append('product_id', productId);
+            formData.append('image_name', imageName);
+            
+            fetch('/set-main-image', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    showToast(data.message, 'success');
+                    // Recargar la página para ver los cambios
+                    setTimeout(() => location.reload(), 1000);
+                } else {
+                    showToast(data.message, 'error');
+                }
+            })
+            .catch(error => {
+                showToast('Error al establecer imagen principal', 'error');
+            });
+        }
+        
+        // Función para eliminar imagen
+        function deleteImage(productId, imageName) {
+            const formData = new FormData();
+            formData.append('product_id', productId);
+            formData.append('image_name', imageName);
+            
+            fetch('/delete-image', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    showToast(data.message, 'success');
+                    // Recargar la página para ver los cambios
+                    setTimeout(() => location.reload(), 1000);
+                } else {
+                    showToast(data.message, 'error');
+                }
+            })
+            .catch(error => {
+                showToast('Error al eliminar la imagen', 'error');
+            });
+        }
+
+        // Mostrar modal de confirmación
+        function showConfirmation(title, message, callback) {
+            document.getElementById('confirmationTitle').textContent = title;
+            document.getElementById('confirmationMessage').textContent = message;
+            document.getElementById('confirmationModal').style.display = 'block';
+            
+            // Configurar acciones de los botones
+            document.getElementById('confirmAction').onclick = function() {
+                document.getElementById('confirmationModal').style.display = 'none';
+                if (callback) callback();
+            };
+            
+            document.getElementById('cancelAction').onclick = function() {
+                document.getElementById('confirmationModal').style.display = 'none';
+            };
+        }
+
+        // Mostrar toast flotante CENTRADO
+        function showToast(message, type = 'success') {
+            const toast = document.getElementById('toast');
+            
+            // Configurar icono según el tipo
+            let iconClass = 'fas fa-check-circle';
+            if (type === 'error') iconClass = 'fas fa-exclamation-circle';
+            if (type === 'info') iconClass = 'fas fa-info-circle';
+            
+            toast.innerHTML = `<i class="${iconClass}"></i><span id="toastMessage">${message}</span>`;
+            toast.className = `toast ${type}`;
+            toast.classList.add('show');
+            
+            // Ocultar después de 3 segundos
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+
+        // Cerrar modal
+        function cerrarModal() {
+            document.getElementById('editCategoryModal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+[
+  {
+    "id": 1,
+    "nombre": "Club de nuit",
+    "precio": 689.0,
+    "imagenes": [
+      "6f076303177b481cb229a7402ffc2319_fragancia1.jpg"
+    ],
+    "categoria": "fragancias",
+    "imagen_principal": "6f076303177b481cb229a7402ffc2319_fragancia1.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Carolina Herrera Good Girl Blush",
+    "precio": 298.0,
+    "imagenes": [
+      "8a3a292a15de40778111a661a485d1f4_fragancia2.jpg"
+    ],
+    "categoria": "fragancias",
+    "imagen_principal": "8a3a292a15de40778111a661a485d1f4_fragancia2.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Deluxe Vent Bleu",
+    "precio": 591.0,
+    "imagenes": [
+      "d1230b89f36048ea9a3e3e74041034d2_77dbf84b-1956-46ff-991e-ab350f60b0ec.jpg"
+    ],
+    "categoria": "fragancias",
+    "imagen_principal": "d1230b89f36048ea9a3e3e74041034d2_77dbf84b-1956-46ff-991e-ab350f60b0ec.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "La Vie Est Belle",
+    "precio": 2580.0,
+    "imagenes": [
+      "2f76155c34004562b1d8a23ac74ec038_2217c187-d53b-4b29-8647-586e60ab57fc.jpg"
+    ],
+    "categoria": "fragancias",
+    "imagen_principal": "2f76155c34004562b1d8a23ac74ec038_2217c187-d53b-4b29-8647-586e60ab57fc.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Vita Base para gel color transparente",
+    "precio": 275.0,
+    "imagenes": [
+      "uñas1.jpg"
+    ],
+    "categoria": "uñas",
+    "imagen_principal": "uñas1.jpg"
+  },
+  {
+    "id": 6,
+    "nombre": "Vita Color Rubber Gel one Shot Milky",
+    "precio": 265.0,
+    "imagenes": [
+      "uñas2.jpg"
+    ],
+    "categoria": "uñas",
+    "imagen_principal": "uñas2.jpg"
+  },
+  {
+    "id": 7,
+    "nombre": "Aceite Hidratante para cutícula Revitanoil",
+    "precio": 110.0,
+    "imagenes": [
+      "uñas3.jpg"
+    ],
+    "categoria": "uñas",
+    "imagen_principal": "uñas3.jpg"
+  },
+  {
+    "id": 8,
+    "nombre": "Polvo acrílico rosa",
+    "precio": 108.0,
+    "imagenes": [
+      "uñas4.jpg"
+    ],
+    "categoria": "uñas",
+    "imagen_principal": "uñas4.jpg"
+  },
+  {
+    "id": 9,
+    "nombre": "Sérum Spécialiste Anti-Oleosidad",
+    "precio": 680.0,
+    "imagenes": [
+      "cuidado de la piel1.jpg"
+    ],
+    "categoria": "cuidado de la piel",
+    "imagen_principal": "cuidado de la piel1.jpg"
+  },
+  {
+    "id": 10,
+    "nombre": "Nocturne Sérum PM Edicion limitada",
+    "precio": 500.0,
+    "imagenes": [
+      "cuidado de la piel2.jpg"
+    ],
+    "categoria": "cuidado de la piel",
+    "imagen_principal": "cuidado de la piel2.jpg"
+  },
+  {
+    "id": 11,
+    "nombre": "Sérum Spécialiste Antimanchas",
+    "precio": 500.0,
+    "imagenes": [
+      "cuidado de la piel3.jpg"
+    ],
+    "categoria": "cuidado de la piel",
+    "imagen_principal": "cuidado de la piel3.jpg"
+  },
+  {
+    "id": 12,
+    "nombre": "Sérum Intensivo Antiarrugas",
+    "precio": 890.0,
+    "imagenes": [
+      "cuidado de la piel4.jpg"
+    ],
+    "categoria": "cuidado de la piel",
+    "imagen_principal": "cuidado de la piel4.jpg"
+  },
+  {
+    "id": 13,
+    "nombre": "Maybelline Tinta",
+    "precio": 259.0,
+    "imagenes": [
+      "991f879e3ee54c0d8f98abadec86d435_23762408-44ce-4eae-b2c1-dd886bfdd088.jpg",
+      "577055cd6e3f4e93af1a5ed9dcf3f998_7fc9cc1c-5c5c-4763-9ce5-5c8385d0ab26.jpg"
+    ],
+    "categoria": "maquillaje",
+    "imagen_principal": "577055cd6e3f4e93af1a5ed9dcf3f998_7fc9cc1c-5c5c-4763-9ce5-5c8385d0ab26.jpg"
+  },
+  {
+    "id": 14,
+    "nombre": "Maybelline instant Age Rewind Corrector Facial",
+    "precio": 380.0,
+    "imagenes": [
+      "de8e1ad63bb14a799e80d1e39a83cb95_5fceff05-3b18-4221-b6cd-07d8f10b1e8f.jpg",
+      "61ed0e151b78433585782792774d1049_570444aa-f71f-4a89-aefc-ba04dcf3adb0 (1).jpg",
+      "30612ab6d2014325b58cefd3276e88b2_b4af6165-d612-4a73-b613-e96c1d9c840c.jpg"
+    ],
+    "categoria": "maquillaje",
+    "imagen_principal": "de8e1ad63bb14a799e80d1e39a83cb95_5fceff05-3b18-4221-b6cd-07d8f10b1e8f.jpg"
+  },
+  {
+    "id": 15,
+    "nombre": "Cicatricure Aceite Biorestaurador",
+    "precio": 750.0,
+    "imagenes": [
+      "5ae4b1bee2b4498d91f4887f2c7e33f3_b076bb2f-d0d4-4be6-808d-21a6a13ae613.jpg",
+      "d09d042affe84793bb9a898798e17f31_fd3980e4-0bde-4fbd-84cc-398532788b39.jpg"
+    ],
+    "categoria": "maquillaje",
+    "imagen_principal": "5ae4b1bee2b4498d91f4887f2c7e33f3_b076bb2f-d0d4-4be6-808d-21a6a13ae613.jpg"
+  },
+  {
+    "id": 16,
+    "nombre": "Máscara Tratante y Sérum",
+    "precio": 690.0,
+    "imagenes": [
+      "675baed854d44a58a25aeb79a4312330_20d684fb-9085-4234-8f90-4e6458abe7d0.jpg",
+      "38e774cd036f46d9b0fc6b78a7b299d6_b57d82bc-1982-4b5a-8994-9d6b108df05d.jpg"
+    ],
+    "categoria": "maquillaje",
+    "imagen_principal": "675baed854d44a58a25aeb79a4312330_20d684fb-9085-4234-8f90-4e6458abe7d0.jpg"
+  },
+  {
+    "id": 17,
+    "nombre": "Limpiador de Lengua Acero Inoxidable",
+    "precio": 299.0,
+    "imagenes": [
+      "5a7501847b1046baa4ab07b86bd93353_15dbd099-8bb3-4e7b-9156-346a7f648066.jpg",
+      "4b6a5d46b13f45498cc6c19750edfb77_6dabbb75-00a5-47f9-8580-572a3283aef2.jpg"
+    ],
+    "categoria": "higiene y bienestar",
+    "imagen_principal": "5a7501847b1046baa4ab07b86bd93353_15dbd099-8bb3-4e7b-9156-346a7f648066.jpg"
+  },
+  {
+    "id": 18,
+    "nombre": "Saba Toallitas Húmedas",
+    "precio": 91.0,
+    "imagenes": [
+      "abc585bf8cd6458cabd0cbbdc188e734_95d2479d-d9c6-4699-b926-722cf65756eb.jpg",
+      "d0748320be054b2293bae9c0692c100e_b40c4983-5128-43ad-8050-bc70a462d6d6.jpg"
+    ],
+    "categoria": "higiene y bienestar",
+    "imagen_principal": "abc585bf8cd6458cabd0cbbdc188e734_95d2479d-d9c6-4699-b926-722cf65756eb.jpg"
+  },
+  {
+    "id": 19,
+    "nombre": "Kleenex Cotteonelle Fresh Papel Higiénico Húmedo",
+    "precio": 70.0,
+    "imagenes": [
+      "26b409a548fa4f51a5bb70fa7695d025_895ac0bc-5125-4986-91b6-7f9b33c4037e.jpg"
+    ],
+    "categoria": "higiene y bienestar",
+    "imagen_principal": "26b409a548fa4f51a5bb70fa7695d025_895ac0bc-5125-4986-91b6-7f9b33c4037e.jpg"
+  },
+  {
+    "id": 20,
+    "nombre": "Pato Disco Activos, Gel Limpiador",
+    "precio": 120.0,
+    "imagenes": [
+      "320f74f513004345ab3f417f238b28d8_ec09396b-38a5-4df2-91f3-5dba662f8ad4.jpg"
+    ],
+    "categoria": "higiene y bienestar",
+    "imagen_principal": "320f74f513004345ab3f417f238b28d8_ec09396b-38a5-4df2-91f3-5dba662f8ad4.jpg"
+  }
+]
