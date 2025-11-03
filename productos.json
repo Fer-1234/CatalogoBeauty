@@ -1,0 +1,3066 @@
+[
+  {
+    "id": 5,
+    "nombre": "5.6 Castaño Claro Rojizo",
+    "precio": 55.0,
+    "imagen": "images/1757118984_5.jpg",
+    "categoria": "tintes",
+    "subcategoria": "Colortech"
+  },
+  {
+    "id": 6,
+    "nombre": "5.20 Castaño Claro Nacarado Profundo",
+    "precio": 55.0,
+    "imagen": "images/1757119035_6.jpg",
+    "categoria": "tintes",
+    "subcategoria": "Colortech"
+  },
+  {
+    "id": 7,
+    "nombre": "6.0 Rubio Obscuro",
+    "precio": 55.0,
+    "imagen": "images/1757119085_7.jpg",
+    "categoria": "tintes",
+    "subcategoria": "Colortech"
+  },
+  {
+    "id": 8,
+    "nombre": "6.3 Rubio Obscuro Dorado",
+    "precio": 55.0,
+    "imagen": "images/1757119148_8.jpg",
+    "categoria": "tintes",
+    "subcategoria": "Colortech"
+  },
+  {
+    "id": 9,
+    "nombre": "6.11 Rubio Obscuro Cenizo Intenso",
+    "precio": 55.0,
+    "imagen": "images/1757119198_9.jpg",
+    "categoria": "tintes",
+    "subcategoria": "Colortech"
+  },
+  {
+    "id": 10,
+    "nombre": "6.12 Chocolate Rubio Obscuro Cenizo Nacarado ",
+    "precio": 55.0,
+    "imagen": "images/1757119289_10.jpg",
+    "categoria": "tintes",
+    "subcategoria": "Colortech"
+  },
+  {
+    "id": 11,
+    "nombre": "6.13 Capuchino Rubio Obscuro Cenizo Dorado",
+    "precio": 55.0,
+    "imagen": "images/1757119338_11.jpg",
+    "categoria": "tintes",
+    "subcategoria": "Colortech"
+  },
+  {
+    "id": 12,
+    "nombre": "6.26 Mora Rubio Obscuro Nacarado Rojizo",
+    "precio": 55.0,
+    "imagen": "images/1757119391_12.jpg",
+    "categoria": "tintes",
+    "subcategoria": "Colortech"
+  },
+  {
+    "id": 13,
+    "nombre": "6.66 Rubio Obscuro Rojizo Intenso",
+    "precio": 55.0,
+    "imagen": "images/1757119447_13.jpg",
+    "categoria": "tintes",
+    "subcategoria": "Colortech"
+  },
+  {
+    "id": 14,
+    "nombre": "7.0 Rubio",
+    "precio": 55.0,
+    "imagen": "images/1757119489_14.jpg",
+    "categoria": "tintes",
+    "subcategoria": "Colortech"
+  },
+  {
+    "id": 15,
+    "nombre": "7.1 Rubio Cenizo",
+    "precio": 55.0,
+    "imagen": "images/1757119545_15.jpg",
+    "categoria": "tintes",
+    "subcategoria": "Colortech"
+  },
+  {
+    "id": 16,
+    "nombre": "7.31 Rubio Dorado Cenizo ",
+    "precio": 55.0,
+    "imagen": "images/1757119976_16.jpg",
+    "categoria": "tintes",
+    "subcategoria": "Colortech"
+  },
+  {
+    "id": 18,
+    "nombre": "7.34 Rubio Dorado Cobrizo ",
+    "precio": 55.0,
+    "imagen": "images/1757120025_17.jpg",
+    "categoria": "tintes",
+    "subcategoria": "Colortech"
+  },
+  {
+    "id": 19,
+    "nombre": "7.62 Rubio Rojizo Nacarado ",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Colortech",
+    "imagen": "images/1757120071_18.jpg"
+  },
+  {
+    "id": 20,
+    "nombre": "8.1 Rubio Claro Cenizo",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Colortech",
+    "imagen": "images/1757120119_19.jpg"
+  },
+  {
+    "id": 21,
+    "nombre": "8.6 Cereza Rubio Claro Rojizo",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Colortech",
+    "imagen": "images/1757359207_20.jpg"
+  },
+  {
+    "id": 22,
+    "nombre": "8.11 Rubio Claro Cenizo Intenso",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Colortech",
+    "imagen": "images/1757359256_21.jpg"
+  },
+  {
+    "id": 23,
+    "nombre": "9.0 Rubio muy Claro",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Colortech",
+    "imagen": "images/1757359304_22.jpg"
+  },
+  {
+    "id": 24,
+    "nombre": "9.1 Rubio muy Claro Cenizo",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Colortech",
+    "imagen": "images/1757359382_23.jpg"
+  },
+  {
+    "id": 25,
+    "nombre": "9.11 Rubio muy Claro Cenizo Intenso",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Colortech",
+    "imagen": "images/1757359427_24.jpg"
+  },
+  {
+    "id": 26,
+    "nombre": "9.22 Rubio muy Claro Nacarado Intenso",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Colortech",
+    "imagen": "images/1757359575_26.jpg"
+  },
+  {
+    "id": 27,
+    "nombre": "9.11 Rubio Cenizo Intenso Ultra Aclarante",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Colortech",
+    "imagen": "images/1757359668_25.jpg"
+  },
+  {
+    "id": 28,
+    "nombre": "10.0 Rubio Extra Claro",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Colortech",
+    "imagen": "images/1757359714_27.jpg"
+  },
+  {
+    "id": 29,
+    "nombre": "10.11 Rubio Extra Claro Ceniza Intenso",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Colortech",
+    "imagen": "images/1757359778_28.jpg"
+  },
+  {
+    "id": 30,
+    "nombre": "10.21 Rubio Extra Claro Nacarado Cenizo",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Colortech",
+    "imagen": "images/1757359838_30.jpg"
+  },
+  {
+    "id": 31,
+    "nombre": "10.22 Rubio Extra Claro Nacarado Intenso",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Colortech",
+    "imagen": "images/1757359915_30.jpg"
+  },
+  {
+    "id": 32,
+    "nombre": "10.31 Rubio Extra Claro Dorado Cenizo",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Colortech",
+    "imagen": "images/1757359980_31.jpg"
+  },
+  {
+    "id": 33,
+    "nombre": "Rosa Bebe",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Colortech",
+    "imagen": "images/1757360025_32.jpg"
+  },
+  {
+    "id": 34,
+    "nombre": "R.664",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Colortech",
+    "imagen": "images/1757360062_33.jpg"
+  },
+  {
+    "id": 35,
+    "nombre": "1.0 A Negro Azulado",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757366112_36.jpg"
+  },
+  {
+    "id": 36,
+    "nombre": "1.0 V Negro Violeta",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757366103_36.jpg"
+  },
+  {
+    "id": 37,
+    "nombre": "1.0 Negro",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757366091_36.jpg"
+  },
+  {
+    "id": 38,
+    "nombre": "2.0 Castaño Extra Oscuro",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757366157_37.jpg"
+  },
+  {
+    "id": 39,
+    "nombre": "3.0 Castaño Oscuro",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757366195_38.jpg"
+  },
+  {
+    "id": 40,
+    "nombre": "4.0 Castaño",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757366255_39.jpg"
+  },
+  {
+    "id": 41,
+    "nombre": "5.0 Castaño Claro",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757366555_46.jpg"
+  },
+  {
+    "id": 42,
+    "nombre": "6.0 Rubio Oscuro",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757366339_41.jpg"
+  },
+  {
+    "id": 43,
+    "nombre": "7.0 Rubio",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757366368_42.jpg"
+  },
+  {
+    "id": 44,
+    "nombre": "8.0 Rubio Claro ",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757366406_43.jpg"
+  },
+  {
+    "id": 45,
+    "nombre": "9.0 Rubio Clarisimo",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757366456_44.jpg"
+  },
+  {
+    "id": 46,
+    "nombre": "Rubio Extra Claro",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757366493_45.jpg"
+  },
+  {
+    "id": 47,
+    "nombre": "6.12 Rubio Oscuro Cenizo Nacarado",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757366669_47.jpg"
+  },
+  {
+    "id": 48,
+    "nombre": "7.12 Rubio Cenizo Nacarado",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757366716_48.jpg"
+  },
+  {
+    "id": 49,
+    "nombre": "9.12 Rubio Clarísimo Cenizo Nacarado ",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757366773_49.jpg"
+  },
+  {
+    "id": 50,
+    "nombre": "5.1 Castaño Claro Cenizo",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757367009_50.jpg"
+  },
+  {
+    "id": 51,
+    "nombre": "6.1 Rubio Oscuro Cenizo",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757367065_51.jpg"
+  },
+  {
+    "id": 52,
+    "nombre": "7.1 Rubio Cenizo",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757367182_52.jpg"
+  },
+  {
+    "id": 53,
+    "nombre": "8.1 Rubio Claro Cenizo",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757367229_53.jpg"
+  },
+  {
+    "id": 54,
+    "nombre": "9.1 Rubio Clarisimo Cenizo",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757367274_54.jpg"
+  },
+  {
+    "id": 55,
+    "nombre": "10.1 Rubio  Extra Claro Cenizo",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757367313_55.jpg"
+  },
+  {
+    "id": 56,
+    "nombre": "6.34 Rubio Oscuro Dorado Cobrizo",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757367358_56.jpg"
+  },
+  {
+    "id": 57,
+    "nombre": "7.24 Rubio Nacarado Cobrizo",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757367417_57.jpg"
+  },
+  {
+    "id": 58,
+    "nombre": "7.44 Rubio Cobrizo Intenso",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757367473_58.jpg"
+  },
+  {
+    "id": 59,
+    "nombre": "7.64 Rubio Rojo Cobrizo",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757367559_59.jpg"
+  },
+  {
+    "id": 60,
+    "nombre": "6.66 Rubio Oscuro Rojo Intenso",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757367615_60.jpg"
+  },
+  {
+    "id": 61,
+    "nombre": "7.62 Rubio Rojo Nacarado",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757367684_61.jpg"
+  },
+  {
+    "id": 62,
+    "nombre": "7.66 Rubio Rojo Intenso",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757367718_62.jpg"
+  },
+  {
+    "id": 63,
+    "nombre": "8.62 Rubio Claro Rojo Nacarado",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757367776_63.jpg"
+  },
+  {
+    "id": 64,
+    "nombre": "8.66 Rubio Claro Rojo Intenso",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757367815_64.jpg"
+  },
+  {
+    "id": 65,
+    "nombre": "9.66 Rubio Clarisimo Rojo Intenso",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757367860_65.jpg"
+  },
+  {
+    "id": 66,
+    "nombre": "6.23 Rubio Oscuro Nacarado Dorado",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757367923_66.jpg"
+  },
+  {
+    "id": 67,
+    "nombre": "6.22 Rubio Oscuro Nacarado Intenso",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757367972_67.jpg"
+  },
+  {
+    "id": 68,
+    "nombre": "7.22 Rubio Nacaradon Intenso",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757368011_68.jpg"
+  },
+  {
+    "id": 69,
+    "nombre": "8.22 Rubio Claro Nacarado Intenso",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757368050_69.jpg"
+  },
+  {
+    "id": 70,
+    "nombre": "9.22 Rubio Clarisimo Nacarado Intenso",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757368149_70.jpg"
+  },
+  {
+    "id": 71,
+    "nombre": "10.22 Rubio Extra Claro Nacarado Intenso",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757368209_71.jpg"
+  },
+  {
+    "id": 72,
+    "nombre": "5.31 Chocolate",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757368238_72.jpg"
+  },
+  {
+    "id": 73,
+    "nombre": "7.31 Latte Machiatto",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757368291_73.jpg"
+  },
+  {
+    "id": 74,
+    "nombre": "7.35 Capuchino",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757368341_74.jpg"
+  },
+  {
+    "id": 75,
+    "nombre": "4.52 Ciclamén",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757379514_74.jpg"
+  },
+  {
+    "id": 76,
+    "nombre": "4.65 Borgoña",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757379689_76.jpg"
+  },
+  {
+    "id": 78,
+    "nombre": "5.5 Castaño Claro Caoba",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757380126_77.jpg"
+  },
+  {
+    "id": 79,
+    "nombre": "7.5 Rubio Caoba",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757380256_78.jpg"
+  },
+  {
+    "id": 80,
+    "nombre": "7.52 Rubio Caoba Nacarado",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757380294_79.jpg"
+  },
+  {
+    "id": 81,
+    "nombre": "6.32 Rubio Oscuro Dorado Nacarado",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757380331_80.jpg"
+  },
+  {
+    "id": 82,
+    "nombre": "7.3 Rubio Dorado",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757380365_81.jpg"
+  },
+  {
+    "id": 83,
+    "nombre": "8.3 Rubio Claro Dorado",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757380405_82.jpg"
+  },
+  {
+    "id": 84,
+    "nombre": "9.33 Rubio Clarisimo Dorado Intenso",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757380461_83.jpg"
+  },
+  {
+    "id": 85,
+    "nombre": "10.31 Rubio Extra Claro Dorado Cenizo",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757380494_84.jpg"
+  },
+  {
+    "id": 86,
+    "nombre": "6.11 Rubio Obscuro Cenizo Intenso",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757380572_85.jpg"
+  },
+  {
+    "id": 87,
+    "nombre": "7.11 Rubio Cenizo Intenso",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757381707_86.jpg"
+  },
+  {
+    "id": 88,
+    "nombre": "8.11 Rubio Claro Cenizo Intenso",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757381762_87.jpg"
+  },
+  {
+    "id": 89,
+    "nombre": "9.11 Rubio Clarísimo Cenizo Intenso",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757381818_88.jpg"
+  },
+  {
+    "id": 90,
+    "nombre": "10.11 Rubio Extra Claro Ceniza Intenso",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757381848_89.jpg"
+  },
+  {
+    "id": 91,
+    "nombre": "9.9 Rubio Platino",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757381906_90.jpg"
+  },
+  {
+    "id": 92,
+    "nombre": "2.1 Negro Azulado",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Colortech",
+    "imagen": "images/1757383660_91.jpg"
+  },
+  {
+    "id": 93,
+    "nombre": "4.0 Castaño Profundo",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Colortech",
+    "imagen": "images/1757383715_92.jpg"
+  },
+  {
+    "id": 94,
+    "nombre": "4.62 Castaño Rojizo Nacarado",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Colortech",
+    "imagen": "images/1757383795_93.jpg"
+  },
+  {
+    "id": 95,
+    "nombre": "4.65 Castaño Rojizo Caoba",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Colortech",
+    "imagen": "images/1757383941_94.jpg"
+  },
+  {
+    "id": 96,
+    "nombre": "Reflect rojo",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757384532_95.jpg"
+  },
+  {
+    "id": 97,
+    "nombre": "Reflect Violeta",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757384639_96.jpg"
+  },
+  {
+    "id": 98,
+    "nombre": "Reflect Rojo Violeta",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757384676_97.jpg"
+  },
+  {
+    "id": 99,
+    "nombre": "Reflect Cobre",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757384704_98.jpg"
+  },
+  {
+    "id": 100,
+    "nombre": "Reflect Dorado Cobrizo",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757384737_99.jpg"
+  },
+  {
+    "id": 101,
+    "nombre": "Cromo Corrector",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757384777_100.jpg"
+  },
+  {
+    "id": 102,
+    "nombre": "Cromo Grafito",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757384807_101.jpg"
+  },
+  {
+    "id": 103,
+    "nombre": "902",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757384849_102.jpg"
+  },
+  {
+    "id": 104,
+    "nombre": "000",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757384874_103.jpg"
+  },
+  {
+    "id": 105,
+    "nombre": "Funny Color Rojo ",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757384915_104.jpg"
+  },
+  {
+    "id": 106,
+    "nombre": "Funny Color Verde",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757384953_105.jpg"
+  },
+  {
+    "id": 107,
+    "nombre": "Funny Color Coral",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757384993_106.jpg"
+  },
+  {
+    "id": 108,
+    "nombre": "Metalic Tones Rosa Metalico",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757385045_107.jpg"
+  },
+  {
+    "id": 109,
+    "nombre": "Metalic Tones Morado Metalico",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757385088_108.jpg"
+  },
+  {
+    "id": 110,
+    "nombre": "5.3 Castaño Claro Dorado",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Colortech",
+    "imagen": "images/1757386043_109.jpg"
+  },
+  {
+    "id": 111,
+    "nombre": "5.64 Ciruela Castaño Claro Rojizo Cobrizo",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Colortech",
+    "imagen": "images/1757386117_110.jpg"
+  },
+  {
+    "id": 112,
+    "nombre": "6.3 Rubios Obscuro Dorado",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Colortech",
+    "imagen": "images/1757386161_111.jpg"
+  },
+  {
+    "id": 113,
+    "nombre": "6.13 Capuchino Rubio Oscuro Cenizo Dorado",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Colortech",
+    "imagen": "images/1757386222_112.jpg"
+  },
+  {
+    "id": 114,
+    "nombre": "7.12 Fondant Rubio Cenizo Nacarado",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Colortech",
+    "imagen": "images/1757386276_113.jpg"
+  },
+  {
+    "id": 115,
+    "nombre": "7.46 Rubio cobrizo rojizo",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Colortech",
+    "imagen": "images/1757386349_114.jpg"
+  },
+  {
+    "id": 116,
+    "nombre": "8.0 Rubio Claro",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Colortech",
+    "imagen": "images/1757386444_115.jpg"
+  },
+  {
+    "id": 117,
+    "nombre": "9.03 Rubio muy Claro Ligeramente Dorado",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Colortech",
+    "imagen": "images/1757386524_116.jpg"
+  },
+  {
+    "id": 118,
+    "nombre": "R.665 Recargados",
+    "precio": 55.0,
+    "categoria": "tintes",
+    "subcategoria": "Colortech",
+    "imagen": "images/1757386576_117.jpg"
+  },
+  {
+    "id": 119,
+    "nombre": "5.0 Castaño Claro",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757386717_118.jpg"
+  },
+  {
+    "id": 120,
+    "nombre": "0sp Reforzador de Aclaración Platinum",
+    "precio": 140.0,
+    "categoria": "tintes",
+    "subcategoria": "Alfapar",
+    "imagen": "images/1757387650_119.jpg"
+  },
+  {
+    "id": 121,
+    "nombre": "0.01 Ceniza Ligero",
+    "precio": 140.0,
+    "categoria": "tintes",
+    "subcategoria": "Alfapar",
+    "imagen": "images/1757387753_120.jpg"
+  },
+  {
+    "id": 122,
+    "nombre": "11.11 Rubio Platino Ceniza Intenso",
+    "precio": 140.0,
+    "categoria": "tintes",
+    "subcategoria": "Alfapar",
+    "imagen": "images/1757387790_121.jpg"
+  },
+  {
+    "id": 123,
+    "nombre": "4NI Castaño Medio Intenso",
+    "precio": 140.0,
+    "categoria": "tintes",
+    "subcategoria": "Alfapar",
+    "imagen": "images/1757387857_122.jpg"
+  },
+  {
+    "id": 124,
+    "nombre": "410 Grafito",
+    "precio": 140.0,
+    "categoria": "tintes",
+    "subcategoria": "Alfapar",
+    "imagen": "images/1757387891_123.jpg"
+  },
+  {
+    "id": 125,
+    "nombre": "4.32 Castaño Medio Dorado Irisado",
+    "precio": 140.0,
+    "categoria": "tintes",
+    "subcategoria": "Alfapar",
+    "imagen": "images/1757388019_124.jpg"
+  },
+  {
+    "id": 126,
+    "nombre": "5.0 Castaño claro",
+    "precio": 140.0,
+    "categoria": "tintes",
+    "subcategoria": "Alfapar",
+    "imagen": "images/1757388101_125.jpg"
+  },
+  {
+    "id": 127,
+    "nombre": "5.1 Castaño Claro Ceniza",
+    "precio": 140.0,
+    "categoria": "tintes",
+    "subcategoria": "Alfapar",
+    "imagen": "images/1757388154_126.jpg"
+  },
+  {
+    "id": 128,
+    "nombre": "5.3 Castaño Claro Dorado",
+    "precio": 140.0,
+    "categoria": "tintes",
+    "subcategoria": "Alfapar",
+    "imagen": "images/1757388190_127.jpg"
+  },
+  {
+    "id": 129,
+    "nombre": "5.6 Castaño Claro Rojo",
+    "precio": 140.0,
+    "categoria": "tintes",
+    "subcategoria": "Alfapar",
+    "imagen": "images/1757388228_128.jpg"
+  },
+  {
+    "id": 130,
+    "nombre": "5.32 Castaño Claro Dorado Irisado",
+    "precio": 140.0,
+    "categoria": "tintes",
+    "subcategoria": "Alfapar",
+    "imagen": "images/1757388280_129.jpg"
+  },
+  {
+    "id": 131,
+    "nombre": "5.53 Castaño Claro Caoba Dorado",
+    "precio": 140.0,
+    "categoria": "tintes",
+    "subcategoria": "Alfapar",
+    "imagen": "images/1757388318_130.jpg"
+  },
+  {
+    "id": 132,
+    "nombre": "3.0 Castaño Oscuro",
+    "precio": 140.0,
+    "categoria": "tintes",
+    "subcategoria": "Alfapar",
+    "imagen": "images/1757389132_132.jpg"
+  },
+  {
+    "id": 133,
+    "nombre": "4.0 Castaño Medio",
+    "precio": 140.0,
+    "categoria": "tintes",
+    "subcategoria": "Alfapar",
+    "imagen": "images/1757389117_132.jpg"
+  },
+  {
+    "id": 134,
+    "nombre": "4.32 Castaño Medio Dorado Irisado",
+    "precio": 140.0,
+    "categoria": "tintes",
+    "subcategoria": "Alfapar",
+    "imagen": "images/1757389180_133.jpg"
+  },
+  {
+    "id": 135,
+    "nombre": "8.01 Rubio Claro Nacré",
+    "precio": 140.0,
+    "categoria": "tintes",
+    "subcategoria": "Alfapar",
+    "imagen": "images/1757389216_134.jpg"
+  },
+  {
+    "id": 136,
+    "nombre": "8.13 Rubio Claro Ceniza Dorado",
+    "precio": 140.0,
+    "categoria": "tintes",
+    "subcategoria": "Alfapar",
+    "imagen": "images/1757389254_135.jpg"
+  },
+  {
+    "id": 137,
+    "nombre": "8.23 Rubio Claro Irisado Dorado",
+    "precio": 140.0,
+    "categoria": "tintes",
+    "subcategoria": "Alfapar",
+    "imagen": "images/1757389299_136.jpg"
+  },
+  {
+    "id": 138,
+    "nombre": "8.32 Rubio Claro Dorado Irisado",
+    "precio": 140.0,
+    "categoria": "tintes",
+    "subcategoria": "Alfapar",
+    "imagen": "images/1757389334_137.jpg"
+  },
+  {
+    "id": 139,
+    "nombre": "8.661 Rubio Claro Rojo Intenso",
+    "precio": 140.0,
+    "categoria": "tintes",
+    "subcategoria": "Alfapar",
+    "imagen": "images/1757389378_138.jpg"
+  },
+  {
+    "id": 140,
+    "nombre": "9.2 Rubio Clarísimo Irisado",
+    "precio": 140.0,
+    "categoria": "tintes",
+    "subcategoria": "Alfapar",
+    "imagen": "images/1757389496_139.jpg"
+  },
+  {
+    "id": 141,
+    "nombre": "9.3 Rubio Clarísimo Dorado",
+    "precio": 140.0,
+    "categoria": "tintes",
+    "subcategoria": "Alfapar",
+    "imagen": "images/1757389533_140.jpg"
+  },
+  {
+    "id": 142,
+    "nombre": "9.04 Rubio Clarísimo Ligeramente Cobre",
+    "precio": 140.0,
+    "categoria": "tintes",
+    "subcategoria": "Alfapar",
+    "imagen": "images/1757389576_141.jpg"
+  },
+  {
+    "id": 143,
+    "nombre": "9.13 Rubio Clarísimo Ceniza Dorado",
+    "precio": 140.0,
+    "categoria": "tintes",
+    "subcategoria": "Alfapar",
+    "imagen": "images/1757389622_142.jpg"
+  },
+  {
+    "id": 144,
+    "nombre": "9.21 Rubio Clarísimo Irizado Ceniza",
+    "precio": 140.0,
+    "categoria": "tintes",
+    "subcategoria": "Alfapar",
+    "imagen": "images/1757389657_143.jpg"
+  },
+  {
+    "id": 145,
+    "nombre": "9.31 Rubio Clarísimo Dorado Ceniza",
+    "precio": 140.0,
+    "categoria": "tintes",
+    "subcategoria": "Alfapar",
+    "imagen": "images/1757389702_144.jpg"
+  },
+  {
+    "id": 146,
+    "nombre": "10 Rubio Extra Claro",
+    "precio": 140.0,
+    "categoria": "tintes",
+    "subcategoria": "Alfapar",
+    "imagen": "images/1757389740_145.jpg"
+  },
+  {
+    "id": 147,
+    "nombre": "10.1 Rubio Extra Claro Ceniza",
+    "precio": 140.0,
+    "categoria": "tintes",
+    "subcategoria": "Alfapar",
+    "imagen": "images/1757389786_146.jpg"
+  },
+  {
+    "id": 148,
+    "nombre": "10.3 Rubio Extra Claro Dorado",
+    "precio": 140.0,
+    "categoria": "tintes",
+    "subcategoria": "Alfapar",
+    "imagen": "images/1757389819_147.jpg"
+  },
+  {
+    "id": 149,
+    "nombre": "11.00 Rubio Platino",
+    "precio": 140.0,
+    "categoria": "tintes",
+    "subcategoria": "Alfapar",
+    "imagen": "images/1757389851_148.jpg"
+  },
+  {
+    "id": 150,
+    "nombre": "6BG Rubio Oscuro  Beige Glacé",
+    "precio": 140.0,
+    "categoria": "tintes",
+    "subcategoria": "Alfapar",
+    "imagen": "images/1757389891_149.jpg"
+  },
+  {
+    "id": 151,
+    "nombre": "7.6 Rubio Medio Rojo",
+    "precio": 140.0,
+    "categoria": "tintes",
+    "subcategoria": "Alfapar",
+    "imagen": "images/1757389925_150.jpg"
+  },
+  {
+    "id": 152,
+    "nombre": "7.62 Rubio Medio Rojo Irisado",
+    "precio": 140.0,
+    "categoria": "tintes",
+    "subcategoria": "Alfapar",
+    "imagen": "images/1757389961_151.jpg"
+  },
+  {
+    "id": 153,
+    "nombre": "7.45 Rubio Medio Cobrizo Caoba",
+    "precio": 140.0,
+    "categoria": "tintes",
+    "subcategoria": "Alfapar",
+    "imagen": "images/1757389998_152.jpg"
+  },
+  {
+    "id": 154,
+    "nombre": "4.0 Castaño Medio",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757390820_153.jpg"
+  },
+  {
+    "id": 155,
+    "nombre": "5.0 Castaño Claro",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757390900_154.jpg"
+  },
+  {
+    "id": 156,
+    "nombre": "6.0 Rubio Oscuro",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757390944_155.jpg"
+  },
+  {
+    "id": 157,
+    "nombre": "7.0 Rubio Medio",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757391004_156.jpg"
+  },
+  {
+    "id": 158,
+    "nombre": "8.0 Rubio Claro",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757391051_157.jpg"
+  },
+  {
+    "id": 159,
+    "nombre": "9.0 Rubio Clarísimo",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757391085_158.jpg"
+  },
+  {
+    "id": 160,
+    "nombre": "10.0 Rubio Extra- Claro",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757391218_158.jpg"
+  },
+  {
+    "id": 161,
+    "nombre": "11.0 Rubio Platino Natural",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757391347_160.jpg"
+  },
+  {
+    "id": 162,
+    "nombre": "1.0 Negro",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757455190_195.jpg"
+  },
+  {
+    "id": 163,
+    "nombre": "0.1",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757391452_162.jpg"
+  },
+  {
+    "id": 164,
+    "nombre": "0.7",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757391481_163.jpg"
+  },
+  {
+    "id": 165,
+    "nombre": "0.21",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757391515_164.jpg"
+  },
+  {
+    "id": 166,
+    "nombre": "0.17",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757392023_165.jpg"
+  },
+  {
+    "id": 167,
+    "nombre": "4.22S",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757392081_166.jpg"
+  },
+  {
+    "id": 168,
+    "nombre": "5.0 Cool",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757392123_167.jpg"
+  },
+  {
+    "id": 169,
+    "nombre": "5.22S",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757392156_168.jpg"
+  },
+  {
+    "id": 170,
+    "nombre": "5.66S",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757392189_169.jpg"
+  },
+  {
+    "id": 171,
+    "nombre": "6.0 Cool Rubio Oscuro Frío",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757392232_170.jpg"
+  },
+  {
+    "id": 172,
+    "nombre": " 8.0 Rubio Claro Frío",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757392366_171.jpg"
+  },
+  {
+    "id": 173,
+    "nombre": "4.22S Castaño Medio Irisado Ultra Intenso",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757392420_172.jpg"
+  },
+  {
+    "id": 174,
+    "nombre": "0.1 Metallic Ash",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757434567_173.jpg"
+  },
+  {
+    "id": 175,
+    "nombre": "0.21 Pearl Dream",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757434695_174.jpg"
+  },
+  {
+    "id": 176,
+    "nombre": "0.7 Deep Matte",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757434739_175.jpg"
+  },
+  {
+    "id": 177,
+    "nombre": "5.0 Cool Castaño Claro Frío",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757455237_195.jpg"
+  },
+  {
+    "id": 178,
+    "nombre": "5.22S Castaño Claro Irisado Ultra Intenso",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757434818_177.jpg"
+  },
+  {
+    "id": 179,
+    "nombre": "5.66S Castaño Claro Rojo Super Intenso",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757434844_178.jpg"
+  },
+  {
+    "id": 180,
+    "nombre": "6.0 Cool Rubio Oscuro Frío",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757455296_179.jpg"
+  },
+  {
+    "id": 181,
+    "nombre": "8.0 Cool Rubio Claro Frío",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757455328_180.jpg"
+  },
+  {
+    "id": 182,
+    "nombre": "0.11 Rubio Platino Ceniza intenso",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757455344_181.jpg"
+  },
+  {
+    "id": 183,
+    "nombre": "2.0 Bruno",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757435042_182.jpg"
+  },
+  {
+    "id": 184,
+    "nombre": "4.1 Castaño Medio Ceniza",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757435118_183.jpg"
+  },
+  {
+    "id": 185,
+    "nombre": "4.51 Castaño Medio Caoba Ceniza",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757435158_184.jpg"
+  },
+  {
+    "id": 186,
+    "nombre": "5.0 Castaño Claro Intenso",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757437806_185.jpg"
+  },
+  {
+    "id": 187,
+    "nombre": "410 Grafito",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757437850_186.jpg"
+  },
+  {
+    "id": 188,
+    "nombre": "5.1 Castaño Claro Ceniza",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757437881_187.jpg"
+  },
+  {
+    "id": 189,
+    "nombre": "5.3 Castaño Claro Dorado",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757437913_188.jpg"
+  },
+  {
+    "id": 190,
+    "nombre": "5.26 Castaño Claro Irisado Rojo",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757437942_189.jpg"
+  },
+  {
+    "id": 191,
+    "nombre": "5.53 Castaño Claro Caoba Dorado",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757437976_190.jpg"
+  },
+  {
+    "id": 192,
+    "nombre": "5.32 Castaño Claro Dorado Irisado",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757438025_191.jpg"
+  },
+  {
+    "id": 193,
+    "nombre": "6.0 Rubio Oscuro Intenso",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757438058_192.jpg"
+  },
+  {
+    "id": 194,
+    "nombre": "600 Rojo",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757438142_193.jpg"
+  },
+  {
+    "id": 195,
+    "nombre": "6.3 Rubio Dorado Oscuro",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757461856_194.jpg"
+  },
+  {
+    "id": 196,
+    "nombre": "3.0 Castaño  Oscuro",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757461916_195.jpg"
+  },
+  {
+    "id": 197,
+    "nombre": "3.7 Púrpura Oscura",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757461999_196.jpg"
+  },
+  {
+    "id": 198,
+    "nombre": "5.83 Castaño Claro Café Dorado",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757462077_197.jpg"
+  },
+  {
+    "id": 199,
+    "nombre": "3.5 Castaño Caoba Oscuro",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757462146_198.jpg"
+  },
+  {
+    "id": 200,
+    "nombre": "5.13 Marrón Avellana",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757462186_199.jpg"
+  },
+  {
+    "id": 201,
+    "nombre": "5.31 Castaño Claro Dorado Cenizo",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757462258_200.jpg"
+  },
+  {
+    "id": 202,
+    "nombre": "5.0 Castaño Claro",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757462316_201.jpg"
+  },
+  {
+    "id": 203,
+    "nombre": "6.6 Rubio Rojizo Radiante",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757462371_202.jpg"
+  },
+  {
+    "id": 204,
+    "nombre": "8NE  Rubio Claro Natural Esencial",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757462420_203.jpg"
+  },
+  {
+    "id": 205,
+    "nombre": "6.34 Marrón Terracota",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757462464_204.jpg"
+  },
+  {
+    "id": 206,
+    "nombre": "5.5 Castaño Caoba Claro",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757462513_205.jpg"
+  },
+  {
+    "id": 207,
+    "nombre": "6.66 Rubio Oscuro Rojizo Extremo",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757462562_206.jpg"
+  },
+  {
+    "id": 208,
+    "nombre": "6.23 Marrón Capuccino",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757462597_207.jpg"
+  },
+  {
+    "id": 209,
+    "nombre": "7.2 Rubio Nacarado Medio",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757462631_208.jpg"
+  },
+  {
+    "id": 210,
+    "nombre": "6MS Metallic Silver Lavander",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757462725_209.jpg"
+  },
+  {
+    "id": 211,
+    "nombre": "6NE  Rubio Oscuro Natural Esencial",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757462821_210.jpg"
+  },
+  {
+    "id": 212,
+    "nombre": "4.7 Borgoña Profundo",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757462865_211.jpg"
+  },
+  {
+    "id": 213,
+    "nombre": "8.1 Rubio Cenizo Claro",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757462913_212.jpg"
+  },
+  {
+    "id": 214,
+    "nombre": "4.51 Marrón Tabaco",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757462959_213.jpg"
+  },
+  {
+    "id": 215,
+    "nombre": "6.1 Rubio Cenizo Oscuro",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757463011_214.jpg"
+  },
+  {
+    "id": 216,
+    "nombre": "7.6 Rubio Rojizo Medio",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757463068_215.jpg"
+  },
+  {
+    "id": 217,
+    "nombre": "7 Rubio Medio",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757463115_216.jpg"
+  },
+  {
+    "id": 218,
+    "nombre": "5.1 Castaño Cenizo Claro",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757463159_217.jpg"
+  },
+  {
+    "id": 219,
+    "nombre": "7NE Rubio Medio Natural Esencial",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757463203_218.jpg"
+  },
+  {
+    "id": 220,
+    "nombre": "4 Castaño Medio",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757463242_219.jpg"
+  },
+  {
+    "id": 221,
+    "nombre": "7.1 Rubio Cenizo Medio",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757463290_220.jpg"
+  },
+  {
+    "id": 222,
+    "nombre": "7.45 Marrón Canela",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757463335_221.jpg"
+  },
+  {
+    "id": 223,
+    "nombre": "7.3 Rubio Dorado Medio",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757463383_221.jpg"
+  },
+  {
+    "id": 224,
+    "nombre": "8MM Metallic Silver Mauve",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757463449_222.jpg"
+  },
+  {
+    "id": 225,
+    "nombre": "6.4 Rubio Cobrizo Oscuro",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757463489_223.jpg"
+  },
+  {
+    "id": 226,
+    "nombre": "5.4 Castaño Cobrizo Claro",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757463532_224.jpg"
+  },
+  {
+    "id": 227,
+    "nombre": "7MS Metallic Silver Smoke",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757463594_225.jpg"
+  },
+  {
+    "id": 228,
+    "nombre": "6.8 Chocolate Tentación",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757463632_226.jpg"
+  },
+  {
+    "id": 229,
+    "nombre": "6.0 Rubio Oscuro",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757463764_228.jpg"
+  },
+  {
+    "id": 230,
+    "nombre": "6.13 Marrón Cocoa",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757463822_229.jpg"
+  },
+  {
+    "id": 231,
+    "nombre": "7.8 Rubio Medio Cafe",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757463866_230.jpg"
+  },
+  {
+    "id": 232,
+    "nombre": "8.3 Rubio Dorado Claro",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757463918_231.jpg"
+  },
+  {
+    "id": 233,
+    "nombre": "7.41 Marrón Bronce",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757463968_232.jpg"
+  },
+  {
+    "id": 234,
+    "nombre": "9MR  Metallic Rose Gold",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757464023_233.jpg"
+  },
+  {
+    "id": 235,
+    "nombre": "8.13 Marrón Cenizo Dorado Claro",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757464069_234.jpg"
+  },
+  {
+    "id": 236,
+    "nombre": "9NE Rubio Claro Claro Natural Esencial",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757464121_235.jpg"
+  },
+  {
+    "id": 237,
+    "nombre": "8.66 Rubio Claro Registro Extremo",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757464174_236.jpg"
+  },
+  {
+    "id": 238,
+    "nombre": "8.6 Rubio Rojizo Claro",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757464234_237.jpg"
+  },
+  {
+    "id": 239,
+    "nombre": "8.21 Rubio Nacarado Cenizo Claro",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757464282_238.jpg"
+  },
+  {
+    "id": 240,
+    "nombre": "9.1 Rubio Cenizo Claro ",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757464330_239.jpg"
+  },
+  {
+    "id": 241,
+    "nombre": "8.4 Rubio Cobrizo Claro",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757464368_240.jpg"
+  },
+  {
+    "id": 242,
+    "nombre": "9MS Metallic Silver Pearl",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757464457_241.jpg"
+  },
+  {
+    "id": 243,
+    "nombre": "8.81 Rubio Claro Café Cenizo",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757464551_242.jpg"
+  },
+  {
+    "id": 244,
+    "nombre": "10MV Metallic Vanila Blonde",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757464620_243.jpg"
+  },
+  {
+    "id": 245,
+    "nombre": "11.9 Rubio Especial Platino",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757464678_244.jpg"
+  },
+  {
+    "id": 246,
+    "nombre": "10.21 Rubio Nacarado Cenizo Extra Claro",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757464725_245.jpg"
+  },
+  {
+    "id": 247,
+    "nombre": "10.9 Blanco Intenso",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757464768_246.jpg"
+  },
+  {
+    "id": 248,
+    "nombre": "10 Rubio Extra Claro",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757464804_247.jpg"
+  },
+  {
+    "id": 249,
+    "nombre": "10.3 Rubio Dorado Extra Claro",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757464846_248.jpg"
+  },
+  {
+    "id": 250,
+    "nombre": "9.13 Marrón Trigo",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757464878_249.jpg"
+  },
+  {
+    "id": 251,
+    "nombre": "11.13 Rubio Especial Cenizo Dorado",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757464914_250.jpg"
+  },
+  {
+    "id": 252,
+    "nombre": "12.11 Rubio Especial Cenizo Intenso",
+    "precio": 70.0,
+    "categoria": "tintes",
+    "subcategoria": "Anven",
+    "imagen": "images/1757464974_251.jpg"
+  },
+  {
+    "id": 253,
+    "nombre": "Ash+ High Lift Ceniza Oscura",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757548964_252.jpg"
+  },
+  {
+    "id": 254,
+    "nombre": "4.0 Castaño",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757549096_253.jpg"
+  },
+  {
+    "id": 255,
+    "nombre": "4.56 Castaño Caoba Rojizo",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757549146_254.jpg"
+  },
+  {
+    "id": 256,
+    "nombre": "5.0 Castaño Claro Profundo",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757549186_255.jpg"
+  },
+  {
+    "id": 257,
+    "nombre": "5.3 Castaño Claro Dorado",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757549224_256.jpg"
+  },
+  {
+    "id": 258,
+    "nombre": "5.4 Castaño Claro Cobrizo",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757549261_257.jpg"
+  },
+  {
+    "id": 259,
+    "nombre": "5.12 Castaño Claro Ceniza Irisado",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757549309_258.jpg"
+  },
+  {
+    "id": 260,
+    "nombre": "5.31 Castaño Claro Dorado Ceniza",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757549353_259.jpg"
+  },
+  {
+    "id": 261,
+    "nombre": "5.20 Castaño Claro Irisado Intenso",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757549434_260.jpg"
+  },
+  {
+    "id": 262,
+    "nombre": "6.0 Rubio Oscuro profundo",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757549477_261.jpg"
+  },
+  {
+    "id": 263,
+    "nombre": "6.1 Rubio Oscuro Ceniza",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757549526_262.jpg"
+  },
+  {
+    "id": 264,
+    "nombre": "6.11 Rubio Oscuro Ceniza Profundo",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757549573_263.jpg"
+  },
+  {
+    "id": 265,
+    "nombre": "6.1 Cool Cover Rubio Ceniza Oscuro",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757549623_264.jpg"
+  },
+  {
+    "id": 266,
+    "nombre": "6.3 Rubio Oscuro Dorado",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757549741_265.jpg"
+  },
+  {
+    "id": 267,
+    "nombre": "6.35 Rubio Oscuro Dorado Caoba",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757549785_266.jpg"
+  },
+  {
+    "id": 268,
+    "nombre": "6.40 Rubio Oscuro Cobrizo Intenso",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757549830_267.jpg"
+  },
+  {
+    "id": 269,
+    "nombre": "6.62 Rubio Oscuro Rojizo Irisado",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757549873_268.jpg"
+  },
+  {
+    "id": 270,
+    "nombre": "5.07 Castaño Claro Dorado",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757549915_269.jpg"
+  },
+  {
+    "id": 271,
+    "nombre": "6.32 Rubio Oscuro Dorado Irisado",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757549964_270.jpg"
+  },
+  {
+    "id": 272,
+    "nombre": "6.23 Ruido Oscuro Irisado Dorado",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757550020_271.jpg"
+  },
+  {
+    "id": 273,
+    "nombre": "6.32 Rubio Oscuro Dorado Irisado",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757550064_272.jpg"
+  },
+  {
+    "id": 274,
+    "nombre": "7.31 Rubio Dorado Ceniza",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757550102_273.jpg"
+  },
+  {
+    "id": 275,
+    "nombre": "9.13 Rubio Muy Claro Cenizo Dorado",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757550151_274.jpg"
+  },
+  {
+    "id": 276,
+    "nombre": "9.22 Rollo Muy Claro Irisado Profundo",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757550234_275.jpg"
+  },
+  {
+    "id": 277,
+    "nombre": "6.34 Rubio Oscuro Dorado Cobrizo",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757550284_276.jpg"
+  },
+  {
+    "id": 278,
+    "nombre": "3.0 Castaño Oscuro",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757550325_277.jpg"
+  },
+  {
+    "id": 279,
+    "nombre": "Neutral",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757550365_278.jpg"
+  },
+  {
+    "id": 280,
+    "nombre": "8.0 Rubio Claro",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757550413_279.jpg"
+  },
+  {
+    "id": 281,
+    "nombre": "7.2 Rubio Irisado",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757550450_280.jpg"
+  },
+  {
+    "id": 282,
+    "nombre": "7.11 Cover Rubio Ceniza Intenso",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757550499_281.jpg"
+  },
+  {
+    "id": 283,
+    "nombre": "8.1 Rubio Claro Ceniza",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757550538_282.jpg"
+  },
+  {
+    "id": 284,
+    "nombre": "7.35 Rubio Dorado Caoba",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757550581_283.jpg"
+  },
+  {
+    "id": 285,
+    "nombre": "7.44 Rubio Cobrizo Profundo",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757550624_284.jpg"
+  },
+  {
+    "id": 286,
+    "nombre": "8.1 Cool Cover  Rubio Ceniza Claro",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757550796_285.jpg"
+  },
+  {
+    "id": 287,
+    "nombre": "8.11 Cool Cover Rubio Ceniza Claro Profundo",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757550853_286.jpg"
+  },
+  {
+    "id": 288,
+    "nombre": "8.13 Rubio Claro Ceniza Dorado",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757550903_287.jpg"
+  },
+  {
+    "id": 289,
+    "nombre": "9.0 Rubio Muy Claro",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757551111_288.jpg"
+  },
+  {
+    "id": 290,
+    "nombre": "9 Cool Cover Rubio Muy Claro",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757551160_289.jpg"
+  },
+  {
+    "id": 291,
+    "nombre": "9.11 Cool Cover Rubio Ceniza Muy Claro Y Profundo",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757551241_290.jpg"
+  },
+  {
+    "id": 292,
+    "nombre": "9.22 Rubio Muy Claro Irisado Profundo",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757551294_291.jpg"
+  },
+  {
+    "id": 293,
+    "nombre": "9.1 Rubio Muy Claro Ceniza",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757551356_292.jpg"
+  },
+  {
+    "id": 294,
+    "nombre": "10.0 Rubio Muy Claro",
+    "precio": 199.0,
+    "categoria": "tintes",
+    "subcategoria": "Majirel",
+    "imagen": "images/1757551425_293.jpg"
+  },
+  {
+    "id": 295,
+    "nombre": "1A Negro Azul",
+    "precio": 64.0,
+    "categoria": "tintes",
+    "subcategoria": "Hidra",
+    "imagen": "images/1757553141_294.jpg"
+  },
+  {
+    "id": 296,
+    "nombre": "1 Negro",
+    "precio": 64.0,
+    "categoria": "tintes",
+    "subcategoria": "Hidra",
+    "imagen": "images/1757553225_295.jpg"
+  },
+  {
+    "id": 297,
+    "nombre": "2.0 Castaño Ultra Oscuro",
+    "precio": 64.0,
+    "categoria": "tintes",
+    "subcategoria": "Hidra",
+    "imagen": "images/1757553269_296.jpg"
+  },
+  {
+    "id": 298,
+    "nombre": "3.0 Castaño Oscuro",
+    "precio": 64.0,
+    "categoria": "tintes",
+    "subcategoria": "Hidra",
+    "imagen": "images/1757553306_297.jpg"
+  },
+  {
+    "id": 299,
+    "nombre": "4.0 Castaño",
+    "precio": 64.0,
+    "categoria": "tintes",
+    "subcategoria": "Hidra",
+    "imagen": "images/1757553380_298.jpg"
+  },
+  {
+    "id": 300,
+    "nombre": "5.0 Castaño Claro",
+    "precio": 64.0,
+    "categoria": "tintes",
+    "subcategoria": "Hidra",
+    "imagen": "images/1757553416_299.jpg"
+  },
+  {
+    "id": 301,
+    "nombre": "6 Rubio Oscuro",
+    "precio": 64.0,
+    "categoria": "tintes",
+    "subcategoria": "Hidra",
+    "imagen": "images/1757553448_300.jpg"
+  },
+  {
+    "id": 302,
+    "nombre": "7.0 Rubio",
+    "precio": 64.0,
+    "categoria": "tintes",
+    "subcategoria": "Hidra",
+    "imagen": "images/1757553483_301.jpg"
+  },
+  {
+    "id": 303,
+    "nombre": "8.0 Rubio Claro",
+    "precio": 64.0,
+    "categoria": "tintes",
+    "subcategoria": "Hidra",
+    "imagen": "images/1757553518_302.jpg"
+  },
+  {
+    "id": 304,
+    "nombre": "9.0 Rubio Clarísimo",
+    "precio": 64.0,
+    "categoria": "tintes",
+    "subcategoria": "Hidra",
+    "imagen": "images/1757553555_303.jpg"
+  },
+  {
+    "id": 305,
+    "nombre": "10.0 Rubio Ultra Claro",
+    "precio": 64.0,
+    "categoria": "tintes",
+    "subcategoria": "Hidra",
+    "imagen": "images/1757553596_304.jpg"
+  },
+  {
+    "id": 306,
+    "nombre": "6.3 Rubio Oscuro Dorado",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Hidra",
+    "imagen": "images/1757553688_305.jpg"
+  },
+  {
+    "id": 307,
+    "nombre": " 6.7 Rubio Oscuro Mate",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757553717_306.jpg"
+  },
+  {
+    "id": 308,
+    "nombre": "6.11 Rubio Oscuro Ceniza Intenso",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757553745_307.jpg"
+  },
+  {
+    "id": 309,
+    "nombre": "6.35 Rubio Oscuro Dorado Caoba",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757553778_308.jpg"
+  },
+  {
+    "id": 310,
+    "nombre": "6.41 Rubio Oscuro Cobre Ceniza",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757553811_309.jpg"
+  },
+  {
+    "id": 311,
+    "nombre": "6.45 Rubio Oscuro Cobre Caoba",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757553856_310.jpg"
+  },
+  {
+    "id": 312,
+    "nombre": "6.51 Rubio Oscuro Caoba Ceniza",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757553883_311.jpg"
+  },
+  {
+    "id": 313,
+    "nombre": "7.00 Rubio Medio Intenso",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757553915_312.jpg"
+  },
+  {
+    "id": 314,
+    "nombre": "7.4 Rubio Medio Cobre",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757553944_313.jpg"
+  },
+  {
+    "id": 315,
+    "nombre": "7.11 Rubio Medio Ceniza Intenso",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757553977_314.jpg"
+  },
+  {
+    "id": 316,
+    "nombre": "7.13 Rubio Medio Ceniza Dorado",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757554003_315.jpg"
+  },
+  {
+    "id": 317,
+    "nombre": "7.21 Rubio Medio Irisado Ceniza",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757554027_316.jpg"
+  },
+  {
+    "id": 318,
+    "nombre": "7.31 Rubio Medio Dorado Ceniza",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757554054_317.jpg"
+  },
+  {
+    "id": 319,
+    "nombre": " 7.32 Rubio Medio Dorado Irisado",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757554082_318.jpg"
+  },
+  {
+    "id": 320,
+    "nombre": "7.35 Rubio Medio Dorado Caoba",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757554111_319.jpg"
+  },
+  {
+    "id": 321,
+    "nombre": "7.45 Rubio Medio Cobre Caoba",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757554138_320.jpg"
+  },
+  {
+    "id": 322,
+    "nombre": "7.53 Rubio Medio Caoba Dorado",
+    "precio": 115.0,
+    "categoria": "tintes",
+    "subcategoria": "Yellow",
+    "imagen": "images/1757554164_321.jpg"
+  },
+  {
+    "id": 323,
+    "nombre": "Clean me Mantenimiento de Color",
+    "precio": 95.0,
+    "categoria": "shampoo",
+    "subcategoria": "Shampoo",
+    "imagen": "images/1757557169_322.jpg"
+  },
+  {
+    "id": 324,
+    "nombre": "Color Me Cabello Tenido",
+    "precio": 80.0,
+    "categoria": "shampoo",
+    "subcategoria": "Shampoo",
+    "imagen": "images/1757557218_323.jpg"
+  },
+  {
+    "id": 325,
+    "nombre": "Color Me Matizador",
+    "precio": 85.0,
+    "categoria": "shampoo",
+    "subcategoria": "Shampoo",
+    "imagen": "images/1757557254_324.jpg"
+  },
+  {
+    "id": 326,
+    "nombre": "Cure Me 2 Phases leave-in",
+    "precio": 85.0,
+    "categoria": "shampoo",
+    "subcategoria": "Tratamientos",
+    "imagen": "images/1757557339_325.jpg"
+  },
+  {
+    "id": 327,
+    "nombre": "Cure me 2 Phase leave-in",
+    "precio": 69.0,
+    "categoria": "shampoo",
+    "subcategoria": "Tratamientos",
+    "imagen": "images/1757557387_326.jpg"
+  },
+  {
+    "id": 328,
+    "nombre": "Quiz Retouch Retocador de Raiz Castaño Medio",
+    "precio": 75.0,
+    "categoria": "tintes",
+    "subcategoria": "Kuul",
+    "imagen": "images/1757557445_327.jpg"
+  },
+  {
+    "id": 329,
+    "nombre": "Yellow Nutritivo",
+    "precio": 185.0,
+    "categoria": "shampoo",
+    "subcategoria": "Shampoo",
+    "imagen": "images/1757557643_350.jpg"
+  },
+  {
+    "id": 330,
+    "nombre": "Yellow Reestructurante",
+    "precio": 185.0,
+    "categoria": "shampoo",
+    "subcategoria": "Shampoo",
+    "imagen": "images/1757557633_350.jpg"
+  },
+  {
+    "id": 331,
+    "nombre": "Yellow Iluminador",
+    "precio": 185.0,
+    "categoria": "shampoo",
+    "subcategoria": "Shampoo",
+    "imagen": "images/1757557685_351.jpg"
+  },
+  {
+    "id": 332,
+    "nombre": "Nefertiti Matizador Rouge Duo",
+    "precio": 145.0,
+    "categoria": "shampoo",
+    "subcategoria": "Shampoo",
+    "imagen": "images/1757557741_352.jpg"
+  },
+  {
+    "id": 333,
+    "nombre": "Kolor Shot Fortificante",
+    "precio": 65.0,
+    "categoria": "shampoo",
+    "subcategoria": "Shampoo",
+    "imagen": "images/1757557784_353.jpg"
+  },
+  {
+    "id": 334,
+    "nombre": "Kolor Shot Vitakolor",
+    "precio": 65.0,
+    "categoria": "shampoo",
+    "subcategoria": "Shampoo",
+    "imagen": "images/1757557819_354.jpg"
+  },
+  {
+    "id": 335,
+    "nombre": "Nefertiti Extrato de Hierbas",
+    "precio": 55.0,
+    "categoria": "shampoo",
+    "subcategoria": "Shampoo",
+    "imagen": "images/1757557866_355.jpg"
+  },
+  {
+    "id": 336,
+    "nombre": "Matizador D'conde Le'black",
+    "precio": 115.0,
+    "categoria": "shampoo",
+    "subcategoria": "Shampoo",
+    "imagen": "images/1757557922_356.jpg"
+  },
+  {
+    "id": 337,
+    "nombre": "Kolor Shot Liso Perfecto",
+    "precio": 60.0,
+    "categoria": "shampoo",
+    "subcategoria": "Shampoo",
+    "imagen": "images/1757557957_357.jpg"
+  },
+  {
+    "id": 338,
+    "nombre": "Xiomara Platino",
+    "precio": 65.0,
+    "categoria": "shampoo",
+    "subcategoria": "Shampoo",
+    "imagen": "images/1757557988_358.jpg"
+  },
+  {
+    "id": 339,
+    "nombre": "Tec Italy Balsami Presto",
+    "precio": 365.0,
+    "categoria": "shampoo",
+    "subcategoria": "Tratamientos",
+    "imagen": "images/1757558037_359.jpg"
+  },
+  {
+    "id": 340,
+    "nombre": "Nekane Mascarrilla Post Tinte",
+    "precio": 80.0,
+    "categoria": "shampoo",
+    "subcategoria": "Tratamientos",
+    "imagen": "images/1757560283_381.jpg"
+  },
+  {
+    "id": 341,
+    "nombre": "Glow Me Silk Lotion Sella Puntas",
+    "precio": 75.0,
+    "categoria": "shampoo",
+    "subcategoria": "Tratamientos",
+    "imagen": "images/1757558222_361.jpg"
+  },
+  {
+    "id": 342,
+    "nombre": "Fix Me Argan Oil",
+    "precio": 110.0,
+    "categoria": "shampoo",
+    "subcategoria": "Tratamientos",
+    "imagen": "images/1757558255_330.jpg"
+  },
+  {
+    "id": 343,
+    "nombre": "Kativa Macadamia Hidratación",
+    "precio": 130.0,
+    "categoria": "shampoo",
+    "subcategoria": "Mascarillas",
+    "imagen": "images/1757559141_362.jpg"
+  },
+  {
+    "id": 344,
+    "nombre": "Katina Keratina Tratamiento Intensivo",
+    "precio": 130.0,
+    "categoria": "shampoo",
+    "subcategoria": "Mascarillas",
+    "imagen": "images/1757559184_363.jpg"
+  },
+  {
+    "id": 345,
+    "nombre": "Katina Colageno Revitaliza y Reestructura",
+    "precio": 130.0,
+    "categoria": "shampoo",
+    "subcategoria": "Mascarillas",
+    "imagen": "images/1757559250_364.jpg"
+  },
+  {
+    "id": 346,
+    "nombre": "Kativa Coconut Reconstrucción",
+    "precio": 130.0,
+    "categoria": "shampoo",
+    "subcategoria": "Mascarillas",
+    "imagen": "images/1757559294_365.jpg"
+  },
+  {
+    "id": 347,
+    "nombre": "Nutrapel Color Teñido y Mechas",
+    "precio": 110.0,
+    "categoria": "shampoo",
+    "subcategoria": "Mascarillas",
+    "imagen": "images/1757559395_366.jpg"
+  },
+  {
+    "id": 348,
+    "nombre": "Nutrapel Cabello Reseco",
+    "precio": 110.0,
+    "categoria": "shampoo",
+    "subcategoria": "Mascarillas",
+    "imagen": "images/1757559444_367.jpg"
+  },
+  {
+    "id": 349,
+    "nombre": "Yellow Alisadora Anti Frizz",
+    "precio": 210.0,
+    "categoria": "shampoo",
+    "subcategoria": "Mascarillas",
+    "imagen": "images/1757559484_368.jpg"
+  },
+  {
+    "id": 350,
+    "nombre": "Yellow Bomba Nutritiva",
+    "precio": 210.0,
+    "categoria": "shampoo",
+    "subcategoria": "Mascarillas",
+    "imagen": "images/1757559518_369.jpg"
+  },
+  {
+    "id": 351,
+    "nombre": "Cure Me Reconstructor ",
+    "precio": 160.0,
+    "categoria": "shampoo",
+    "subcategoria": "Mascarillas",
+    "imagen": "images/1757559552_370.jpg"
+  },
+  {
+    "id": 352,
+    "nombre": "Rescue Me Restauración Intensiva",
+    "precio": 95.0,
+    "categoria": "shampoo",
+    "subcategoria": "Mascarillas",
+    "imagen": "images/1757559591_371.jpg"
+  },
+  {
+    "id": 353,
+    "nombre": "Polvo para el Cabello: Hidra Bleach 45 g",
+    "precio": 50.0,
+    "categoria": "decolorantes",
+    "subcategoria": "Decolorantes",
+    "imagen": "images/1757559737_372.jpg"
+  },
+  {
+    "id": 354,
+    "nombre": "Polvo Loréal Profesional Paris Blonde Studio",
+    "precio": 50.0,
+    "categoria": "decolorantes",
+    "subcategoria": "Decolorantes",
+    "imagen": "images/1757559783_373.jpg"
+  },
+  {
+    "id": 355,
+    "nombre": "Polvo 9 Tonos de Aclaración: Blonde Bleach: High Lift 50 g",
+    "precio": 50.0,
+    "categoria": "decolorantes",
+    "subcategoria": "Decolorantes",
+    "imagen": "images/1757559823_374.jpg"
+  },
+  {
+    "id": 356,
+    "nombre": "Polvo para el Cabello: Küül: Change Me Bleach Powder  45 g",
+    "precio": 50.0,
+    "categoria": "decolorantes",
+    "subcategoria": "Decolorantes",
+    "imagen": "images/1757559889_375.jpg"
+  },
+  {
+    "id": 357,
+    "nombre": "Nekane Polvo Azul",
+    "precio": 65.0,
+    "categoria": "decolorantes",
+    "subcategoria": "Decolorantes",
+    "imagen": "images/1757559941_376.jpg"
+  },
+  {
+    "id": 358,
+    "nombre": "Küül Color System Change Me Bleach Powder 350 g",
+    "precio": 145.0,
+    "categoria": "decolorantes",
+    "subcategoria": "Decolorantes",
+    "imagen": "images/1757560054_377.jpg"
+  },
+  {
+    "id": 359,
+    "nombre": "Hidra Bleach  350 g",
+    "precio": 165.0,
+    "categoria": "decolorantes",
+    "subcategoria": "Decolorantes",
+    "imagen": "images/1757560091_378.jpg"
+  },
+  {
+    "id": 360,
+    "nombre": "Corrector en Barra",
+    "precio": 42.0,
+    "categoria": "maquillaje",
+    "subcategoria": "Bissú",
+    "imagen": "images/1757560143_379.jpg"
+  },
+  {
+    "id": 361,
+    "nombre": "Corrector Liquido",
+    "precio": 65.0,
+    "categoria": "maquillaje",
+    "subcategoria": "Bissú",
+    "imagen": "images/1757560179_380.jpg"
+  },
+  {
+    "id": 362,
+    "nombre": "Plumín para cejas",
+    "precio": 60.0,
+    "categoria": "maquillaje",
+    "subcategoria": "Apple",
+    "imagen": "images/1757560215_381.jpg"
+  },
+  {
+    "id": 363,
+    "nombre": "Matte Concealer",
+    "precio": 90.0,
+    "categoria": "maquillaje",
+    "subcategoria": "Amor Us",
+    "imagen": "images/1757560660_383.jpg"
+  },
+  {
+    "id": 364,
+    "nombre": "Delineador ",
+    "precio": 40.0,
+    "categoria": "maquillaje",
+    "subcategoria": "Prosa",
+    "imagen": "images/1757560729_382.jpg"
+  },
+  {
+    "id": 365,
+    "nombre": "BB Crema Matte Finish",
+    "precio": 140.0,
+    "categoria": "maquillaje",
+    "subcategoria": "Pink Up",
+    "imagen": "images/1757560939_384.jpg"
+  },
+  {
+    "id": 366,
+    "nombre": "Astringent Elimina y Controla el Exceso de Grasa",
+    "precio": 135.0,
+    "categoria": "maquillaje",
+    "subcategoria": "Pink Up",
+    "imagen": "images/1757560987_385.jpg"
+  },
+  {
+    "id": 367,
+    "nombre": "Balance Balanceador de Piel",
+    "precio": 130.0,
+    "categoria": "maquillaje",
+    "subcategoria": "Pink Up",
+    "imagen": "images/1757561023_386.jpg"
+  },
+  {
+    "id": 368,
+    "nombre": "Blush",
+    "precio": 65.0,
+    "categoria": "maquillaje",
+    "subcategoria": "Pink Up",
+    "imagen": "images/1757561051_387.jpg"
+  },
+  {
+    "id": 369,
+    "nombre": "Mate HD Polvo Compacto Matificante",
+    "precio": 89.0,
+    "categoria": "maquillaje",
+    "subcategoria": "Pink Up",
+    "imagen": "images/1757561090_388.jpg"
+  },
+  {
+    "id": 370,
+    "nombre": "MC Nails Flex  Polvo Transparente  4 OZ",
+    "precio": 125.0,
+    "categoria": "unas",
+    "subcategoria": "Acrilicos",
+    "imagen": "images/1757561157_389.jpg"
+  },
+  {
+    "id": 371,
+    "nombre": "Organic Nails Ultra White",
+    "precio": 399.0,
+    "categoria": "unas",
+    "subcategoria": "Acrilicos",
+    "imagen": "images/1757561267_391.jpg"
+  },
+  {
+    "id": 372,
+    "nombre": "Fantasy Nails Acrílico Rosa ",
+    "precio": 99.0,
+    "categoria": "unas",
+    "subcategoria": "Acrilicos",
+    "imagen": "images/1757561256_391.jpg"
+  },
+  {
+    "id": 373,
+    "nombre": "Organic Nails Bride Collection Rose ",
+    "precio": 215.0,
+    "categoria": "unas",
+    "subcategoria": "Acrilicos",
+    "imagen": "images/1757561313_392.jpg"
+  },
+  {
+    "id": 374,
+    "nombre": "Lobo MR Profesional",
+    "precio": 99.0,
+    "categoria": "unas",
+    "subcategoria": "Alicates",
+    "imagen": "images/1757561360_393.jpg"
+  },
+  {
+    "id": 375,
+    "nombre": "Katia Colección",
+    "precio": 80.0,
+    "categoria": "unas",
+    "subcategoria": "Alicates",
+    "imagen": "images/1757561404_394.jpg"
+  },
+  {
+    "id": 376,
+    "nombre": "Lobo Profesional",
+    "precio": 99.0,
+    "categoria": "unas",
+    "subcategoria": "Tijeras",
+    "imagen": "images/1757561444_395.jpg"
+  },
+  {
+    "id": 377,
+    "nombre": "Lobo MR Profesional",
+    "precio": 95.0,
+    "categoria": "unas",
+    "subcategoria": "",
+    "imagen": "images/1757561480_396.jpg"
+  },
+  {
+    "id": 378,
+    "nombre": "Lobo MR Profesional",
+    "precio": 99.0,
+    "categoria": "unas",
+    "subcategoria": "Alicates",
+    "imagen": "images/1757561520_397.jpg"
+  },
+  {
+    "id": 379,
+    "nombre": "Estuche manicure y pedicure",
+    "precio": 350.0,
+    "categoria": "unas",
+    "subcategoria": "Manicure y Pedicure",
+    "imagen": "images/1757561853_400.jpg"
+  },
+  {
+    "id": 380,
+    "nombre": "Estuche Manicure",
+    "precio": 199.0,
+    "categoria": "unas",
+    "subcategoria": "Manicure y Pedicure",
+    "imagen": "images/1757561786_399.jpg"
+  },
+  {
+    "id": 381,
+    "nombre": "Marca Lobo Juegos de tijeras para estilismos",
+    "precio": 380.0,
+    "categoria": "unas",
+    "subcategoria": "Tijeras",
+    "imagen": "images/1757561832_400.jpg"
+  },
+  {
+    "id": 382,
+    "nombre": "Yellow 10 Vol - 3% 1000 ML",
+    "precio": 130.0,
+    "categoria": "decolorantes",
+    "subcategoria": "Peroxidos",
+    "imagen": "images/1757565092_401.jpg"
+  },
+  {
+    "id": 383,
+    "nombre": "Yellow 20 Vol - 6%  1000 ML",
+    "precio": 130.0,
+    "categoria": "decolorantes",
+    "subcategoria": "Peroxidos",
+    "imagen": "images/1757565282_402.jpg"
+  },
+  {
+    "id": 384,
+    "nombre": "Küül Peroxido en Crema  10 Vol (3%) 870 ML",
+    "precio": 50.0,
+    "categoria": "decolorantes",
+    "subcategoria": "Peroxidos",
+    "imagen": "images/1757565337_403.jpg"
+  },
+  {
+    "id": 385,
+    "nombre": "L'oréal: 30 Vol / 9%  1 L",
+    "precio": 290.0,
+    "categoria": "decolorantes",
+    "subcategoria": "Peroxidos",
+    "imagen": "images/1757565368_404.jpg"
+  },
+  {
+    "id": 386,
+    "nombre": "Silver Acondicionador anti-amarillo",
+    "precio": 210.0,
+    "categoria": "shampoo",
+    "subcategoria": "Shampoo",
+    "imagen": "images/1757798056_405.jpg"
+  },
+  {
+    "id": 387,
+    "nombre": "Acondicionador iluminador",
+    "precio": 210.0,
+    "categoria": "shampoo",
+    "subcategoria": "Shampoo",
+    "imagen": "images/1757798096_406.jpg"
+  },
+  {
+    "id": 388,
+    "nombre": "Acondicionador hidratacion y anti frizz",
+    "precio": 210.0,
+    "categoria": "shampoo",
+    "subcategoria": "Shampoo",
+    "imagen": "images/1757798141_407.jpg"
+  },
+  {
+    "id": 389,
+    "nombre": "Acondicionador reestructurante",
+    "precio": 210.0,
+    "categoria": "shampoo",
+    "subcategoria": "Shampoo",
+    "imagen": "images/1757798180_408.jpg"
+  }
+]

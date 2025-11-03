@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración - Pink</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --pink-primary: #FFB6C1;
+            --pink-dark: #FF69B4;
+            --pink-light: #FFD1DC;
+            --pink-accent: #FF85A2;
+            --lavender: #D8BFD8;
+            --lavender-dark: #9370DB;
+            --text-dark: #666;
+            --text-light: #888;
+            --background: #FFF5F5;
+            --card-bg: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: var(--background);
+            color: #333;
+            min-height: 100vh;
+        }
+
+        .admin-container {
+            min-height: 100vh;
+            background-color: var(--background);
+        }
+        
+        .admin-header {
+            background-color: var(--card-bg);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            padding: 15px 0;
+            margin-bottom: 30px;
+        }
+        
+        .admin-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .admin-nav h1 {
+            color: var(--pink-dark);
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .admin-nav-actions {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .admin-nav-btn {
+            padding: 10px 20px;
+            background-color: var(--pink-light);
+            color: var(--text-dark);
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            text-decoration: none;
+        }
+        
+        .admin-nav-btn:hover {
+            background-color: var(--pink-primary);
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .admin-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px 40px;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 25px;
+        }
+        
+        .admin-sidebar {
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--pink-light);
+            height: fit-content;
+        }
+        
+        .admin-main {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        
+        .admin-section {
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--pink-light);
+        }
+        
+        .admin-section h2 {
+            color: var(--pink-dark);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--pink-light);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .sidebar-menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .sidebar-menu li {
+            margin-bottom: 10px;
+        }
+        
+        .sidebar-menu a {
+            display: block;
+            padding: 12px 15px;
+            background-color: var(--pink-light);
+            color: var(--text-dark);
+            text-decoration: none;
+            border-radius: 10px;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+        
+        .sidebar-menu a:hover, .sidebar-menu a.active {
+            background-color: var(--pink-primary);
+            color: white;
+        }
+        
+        .sidebar-menu i {
+            width: 20px;
+            text-align: center;
+            margin-right: 10px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--pink-light);
+        }
+        
+        th {
+            background-color: var(--pink-light);
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+        
+        tr:hover {
+            background-color: rgba(255, 182, 193, 0.1);
+        }
+        
+        .btn-action {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 5px;
+            font-size: 14px;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .btn-edit {
+            background-color: var(--pink-light);
+            color: var(--text-dark);
+        }
+        
+        .btn-edit:hover {
+            background-color: var(--pink-primary);
+            color: white;
+        }
+        
+        .btn-delete {
+            background-color: #ff6b6b;
+            color: white;
+        }
+        
+        .btn-delete:hover {
+            background-color: #ee5253;
+        }
+        
+        .form-row {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .form-group {
+            flex: 1;
+            min-width: 250px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+        
+        .form-group input, 
+        .form-group select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid var(--pink-light);
+            border-radius: 10px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+        
+        .form-group input:focus, 
+        .form-group select:focus {
+            border-color: var(--pink-dark);
+            outline: none;
+        }
+        
+        .btn-submit {
+            padding: 12px 25px;
+            background: linear-gradient(135deg, var(--pink-primary), var(--pink-accent));
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .btn-submit:hover {
+            background: linear-gradient(135deg, var(--pink-accent), var(--pink-dark));
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 182, 193, 0.4);
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .categoria-item, .filtro-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 15px;
+            background-color: var(--pink-light);
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .categoria-actions, .filtro-actions {
+            display: flex;
+            gap: 5px;
+        }
+        
+        .image-preview {
+            width: 100px;
+            height: 100px;
+            border: 2px dashed var(--pink-light);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            overflow: hidden;
+        }
+        
+        .image-preview img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+        
+        .product-image {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        
+        .file-info {
+            font-size: 12px;
+            color: var(--text-light);
+            margin-top: 5px;
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        
+        .modal-content {
+            background-color: var(--card-bg);
+            margin: 5% auto;
+            padding: 30px;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 600px;
+            position: relative;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+        
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 28px;
+            cursor: pointer;
+            color: var(--text-light);
+            transition: color 0.3s;
+        }
+        
+        .close:hover {
+            color: var(--pink-dark);
+        }
+        
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .loading-spinner {
+            border: 4px solid var(--pink-light);
+            border-top: 4px solid var(--pink-dark);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 15px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* Toast notifications */
+        .toast-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .toast {
+            padding: 15px 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            animation: slideIn 0.3s ease forwards;
+            max-width: 350px;
+            border-left: 4px solid var(--pink-dark);
+        }
+        
+        .toast.success {
+            border-left-color: #4CAF50;
+        }
+        
+        .toast.error {
+            border-left-color: #F44336;
+        }
+        
+        .toast.warning {
+            border-left-color: #FF9800;
+        }
+        
+        .toast.info {
+            border-left-color: var(--pink-dark);
+        }
+        
+        .toast i {
+            font-size: 20px;
+        }
+        
+        .toast.success i {
+            color: #4CAF50;
+        }
+        
+        .toast.error i {
+            color: #F44336;
+        }
+        
+        .toast.warning i {
+            color: #FF9800;
+        }
+        
+        .toast.info i {
+            color: var(--pink-dark);
+        }
+        
+        @keyframes slideIn {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes slideOut {
+            from {
+                transform: translateX(0);
+                opacity: 1;
+            }
+            to {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+        }
+        
+        @media (max-width: 1024px) {
+            .admin-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .admin-sidebar {
+                order: 2;
+            }
+            
+            .admin-main {
+                order: 1;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .admin-nav {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+            
+            .form-row {
+                flex-direction: column;
+            }
+            
+            .form-group {
+                min-width: 100%;
+            }
+            
+            .admin-nav-actions {
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            .admin-nav-btn {
+                justify-content: center;
+            }
+            
+            table {
+                display: block;
+                overflow-x: auto;
+            }
+            
+            .toast-container {
+                left: 20px;
+                right: 20px;
+            }
+            
+            .toast {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="admin-container">
+        <!-- Vista de Administración -->
+        <div id="adminView">
+            <header class="admin-header">
+                <nav class="admin-nav">
+                    <h1><i class="fas fa-cog"></i> Panel de Administración Pink</h1>
+                    <div class="admin-nav-actions">
+                        <a href="/" class="admin-nav-btn">
+                            <i class="fas fa-store"></i> Ir a Tienda
+                        </a>
+                        <button class="admin-nav-btn" id="logoutBtn">
+                            <i class="fas fa-sign-out-alt"></i> Cerrar Sesión
+                        </button>
+                    </div>
+                </nav>
+            </header>
+            
+            <div class="admin-content">
+                <aside class="admin-sidebar">
+                    <h2><i class="fas fa-bars"></i> Menú</h2>
+                    <ul class="sidebar-menu">
+                        <li><a href="#productos" class="active" onclick="showTab('productos')"><i class="fas fa-box"></i> Productos</a></li>
+                        <li><a href="#categorias" onclick="showTab('categorias')"><i class="fas fa-tags"></i> Categorías</a></li>
+                        <li><a href="#filtros" onclick="showTab('filtros')"><i class="fas fa-filter"></i> Filtros</a></li>
+                    </ul>
+                </aside>
+                
+                <main class="admin-main">
+                    <div class="loading" id="loadingIndicator">
+                        <div class="loading-spinner"></div>
+                        <p>Cargando datos...</p>
+                    </div>
+                    
+                    <!-- Pestaña de Productos -->
+                    <div id="tab-productos" class="tab-content active">
+                        <div class="admin-section">
+                            <h2><i class="fas fa-box-open"></i> Gestión de Productos</h2>
+                            
+                            <button class="btn-submit" onclick="showProductForm()" style="margin-bottom: 20px;">
+                                <i class="fas fa-plus"></i> Agregar Nuevo Producto
+                            </button>
+                            
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Categoría</th>
+                                        <th>Subcategoría</th>
+                                        <th>Precio</th>
+                                        <th>Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="productos-table">
+                                    <!-- Los productos se cargarán dinámicamente -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <!-- Pestaña de Categorías -->
+                    <div id="tab-categorias" class="tab-content">
+                        <div class="admin-section">
+                            <h2><i class="fas fa-tags"></i> Gestión de Categorías</h2>
+                            
+                            <form id="categoriaForm">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="categoriaId">ID de Categoría</label>
+                                        <input type="text" id="categoriaId" name="categoriaId" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="categoriaNombre">Nombre de Categoría</label>
+                                        <input type="text" id="categoriaNombre" name="categoriaNombre" required>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn-submit" onclick="addCategory(event)">
+                                    <i class="fas fa-plus"></i> Agregar Categoría
+                                </button>
+                                <button type="button" class="btn-submit" id="updateCategoryBtn" style="display: none;" 
+                                        onclick="updateCategory(event)">
+                                    <i class="fas fa-edit"></i> Actualizar Categoría
+                                </button>
+                                <button type="button" class="btn-submit" id="cancelEditBtn" style="display: none; background-color: #6c757d;" 
+                                        onclick="cancelEdit()">
+                                    <i class="fas fa-times"></i> Cancelar
+                                </button>
+                            </form>
+                            
+                            <div id="categorias-list" style="margin-top: 30px;">
+                                <h3>Categorías Existentes</h3>
+                                <!-- Las categorías se cargarán dinámicamente -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Pestaña de Filtros -->
+                    <div id="tab-filtros" class="tab-content">
+                        <div class="admin-section">
+                            <h2><i class="fas fa-filter"></i> Gestión de Filtros</h2>
+                            
+                            <div class="form-group">
+                                <label for="filtroCategoria">Seleccionar Categoría</label>
+                                <select id="filtroCategoria" onchange="loadFilters()">
+                                    <option value="">Seleccionar categoría</option>
+                                    <!-- Las opciones se cargarán dinámicamente -->
+                                </select>
+                            </div>
+                            
+                            <div id="filtros-container" style="display: none;">
+                                <form id="filtroForm" style="margin: 20px 0;">
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="filtroNombre">Nuevo Filtro</label>
+                                            <input type="text" id="filtroNombre" name="filtroNombre" required>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn-submit" onclick="addFilter(event)">
+                                        <i class="fas fa-plus"></i> Agregar Filtro
+                                    </button>
+                                </form>
+                                
+                                <div id="filtros-list">
+                                    <h3>Filtros Existentes</h3>
+                                    <!-- Los filtros se cargarán dinámicamente -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para Productos -->
+    <div id="productModal" class="modal">
+        <div class="modal-content" style="max-width: 600px;">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"><i class="fas fa-box"></i> Agregar Producto</h2>
+            
+            <form id="productForm" enctype="multipart/form-data">
+                <input type="hidden" id="productId" name="productId">
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="productName">Nombre del Producto</label>
+                        <input type="text" id="productName" name="productName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="productPrice">Precio ($)</label>
+                        <input type="number" id="productPrice" name="productPrice" step="0.01" min="0" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="productCategory">Categoría</label>
+                        <select id="productCategory" name="productCategory" required onchange="updateSubcategories(this.value)">
+                            <option value="">Seleccionar categoría</option>
+                            <!-- Las opciones se cargarán dinámicamente -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="productSubcategory">Subcategoría (Filtro)</label>
+                        <select id="productSubcategory" name="productSubcategory">
+                            <option value="">Seleccionar subcategoría</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="productImage">Imagen del Producto</label>
+                    <input type="file" id="productImage" name="productImage" accept="image/jpeg,image/png,image/jpg,image/gif,image/webp">
+                    <div class="file-info">Formatos válidos: JPG, PNG, GIF, WEBP. Tamaño máximo: 16MB</div>
+                    <div id="imagePreview" class="image-preview">
+                        <span>Vista previa</span>
+                    </div>
+                </div>
+                
+                <button type="button" class="btn-submit" onclick="submitProductForm()">
+                    <i class="fas fa-save"></i> Guardar Producto
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Contenedor para mensajes flotantes -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script>
+        // Variables globales
+        let currentProductId = null;
+        let currentCategoryId = null;
+        let categoriasData = [];
+        let filtrosData = {};
+        let productosData = [];
+        
+        // Mostrar mensaje flotante
+        function showToast(message, type = 'info') {
+            const toastContainer = document.getElementById('toastContainer');
+            const toast = document.createElement('div');
+            toast.className = `toast ${type}`;
+            
+            let icon = 'fa-info-circle';
+            if (type === 'success') icon = 'fa-check-circle';
+            if (type === 'error') icon = 'fa-exclamation-circle';
+            if (type === 'warning') icon = 'fa-exclamation-triangle';
+            
+            toast.innerHTML = `
+                <i class="fas ${icon}"></i>
+                <div>${message}</div>
+            `;
+            
+            toastContainer.appendChild(toast);
+            
+            // Eliminar el toast después de 4 segundos
+            setTimeout(() => {
+                toast.style.animation = 'slideOut 0.3s ease-out';
+                setTimeout(() => {
+                    toastContainer.removeChild(toast);
+                }, 300);
+            }, 4000);
+        }
+        
+        // Mostrar indicador de carga
+        function showLoading() {
+            document.getElementById('loadingIndicator').style.display = 'block';
+        }
+        
+        // Ocultar indicador de carga
+        function hideLoading() {
+            document.getElementById('loadingIndicator').style.display = 'none';
+        }
+        
+        // Funciones de navegación
+        function showTab(tabName) {
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelectorAll('.sidebar-menu a').forEach(link => {
+                link.classList.remove('active');
+            });
+            
+            document.getElementById(`tab-${tabName}`).classList.add('active');
+            document.querySelector(`a[href="#${tabName}"]`).classList.add('active');
+        }
+        
+        // Cargar datos iniciales
+        async function loadInitialData() {
+            showLoading();
+            try {
+                // Cargar productos
+                const productosResponse = await fetch('/admin/api/productos');
+                if (productosResponse.ok) {
+                    productosData = await productosResponse.json();
+                    renderProductos();
+                } else {
+                    showToast('Error al cargar productos', 'error');
+                }
+                
+                // Cargar categorías y filtros
+                const categoriasResponse = await fetch('/admin/api/categorias');
+                if (categoriasResponse.ok) {
+                    const data = await categoriasResponse.json();
+                    categoriasData = data.categorias;
+                    filtrosData = data.filtros;
+                    renderCategorias();
+                    renderFiltrosSelect();
+                } else {
+                    showToast('Error al cargar categorías', 'error');
+                }
+            } catch (error) {
+                console.error('Error cargando datos:', error);
+                showToast('Error al cargar los datos. Por favor, recarga la página.', 'error');
+            } finally {
+                hideLoading();
+            }
+        }
+        
+        // Renderizar productos en la tabla
+        function renderProductos() {
+            const tableBody = document.getElementById('productos-table');
+            tableBody.innerHTML = '';
+            
+            if (productosData.length === 0) {
+                tableBody.innerHTML = '<tr><td colspan="6" style="text-align: center; padding: 20px;">No hay productos registrados</td></tr>';
+                return;
+            }
+            
+            productosData.forEach(producto => {
+                const row = document.createElement('tr');
+                
+                // Construir la ruta correcta de la imagen
+                let imagePath = producto.imagen;
+                if (!imagePath.startsWith('images/') && !imagePath.startsWith('/static/images/')) {
+                    imagePath = 'images/' + imagePath;
+                }
+                
+                row.innerHTML = `
+                    <td><img src="/static/${imagePath}" alt="${producto.nombre}" class="product-image" 
+                             onerror="this.src='/static/images/default-product.jpg'"></td>
+                    <td>${producto.nombre}</td>
+                    <td>${producto.categoria}</td>
+                    <td>${producto.subcategoria || 'Ninguna'}</td>
+                    <td>$${producto.precio}</td>
+                    <td>
+                        <button class="btn-action btn-edit" onclick="editProduct(${producto.id})">
+                            <i class="fas fa-edit"></i> Editar
+                        </button>
+                        <button class="btn-action btn-delete" onclick="deleteProduct(${producto.id})">
+                            <i class="fas fa-trash"></i> Eliminar
+                        </button>
+                    </td>
+                `;
+                tableBody.appendChild(row);
+            });
+        }
+        
+        // Renderizar categorías
+        function renderCategorias() {
+            const categoriasList = document.getElementById('categorias-list');
+            categoriasList.innerHTML = '<h3>Categorías Existentes</h3>';
+            
+            if (categoriasData.length === 0) {
+                categoriasList.innerHTML += '<p>No hay categorías registradas</p>';
+                return;
+            }
+            
+            categoriasData.forEach(categoria => {
+                const item = document.createElement('div');
+                item.className = 'categoria-item';
+                item.innerHTML = `
+                    <span>${categoria.nombre} (${categoria.id})</span>
+                    <div class="categoria-actions">
+                        <button class="btn-action btn-edit" onclick="editCategory('${categoria.id}')">
+                            <i class="fas fa-edit"></i> Editar
+                        </button>
+                        ${categoria.id !== 'todos' ? `
+                        <button class="btn-action btn-delete" onclick="deleteCategory('${categoria.id}')">
+                            <i class="fas fa-trash"></i> Eliminar
+                        </button>
+                        ` : ''}
+                    </div>
+                `;
+                categoriasList.appendChild(item);
+            });
+            
+            // Actualizar select de categorías en el formulario de productos
+            const categorySelect = document.getElementById('productCategory');
+            categorySelect.innerHTML = '<option value="">Seleccionar categoría</option>';
+            
+            categoriasData.forEach(categoria => {
+                if (categoria.id !== 'todos') {
+                    const option = document.createElement('option');
+                    option.value = categoria.id;
+                    option.textContent = categoria.nombre;
+                    categorySelect.appendChild(option);
+                }
+            });
+        }
+        
+        // Renderizar select de categorías para filtros
+        function renderFiltrosSelect() {
+            const filtroCategoriaSelect = document.getElementById('filtroCategoria');
+            filtroCategoriaSelect.innerHTML = '<option value="">Seleccionar categoría</option>';
+            
+            categoriasData.forEach(categoria => {
+                if (categoria.id !== 'todos') {
+                    const option = document.createElement('option');
+                    option.value = categoria.id;
+                    option.textContent = categoria.nombre;
+                    filtroCategoriaSelect.appendChild(option);
+                }
+            });
+        }
+        
+        // Funciones para productos
+        function showProductForm(productId = null) {
+            currentProductId = productId;
+            const modal = document.getElementById('productModal');
+            const title = document.getElementById('modalTitle');
+            const form = document.getElementById('productForm');
+            const imageInput = document.getElementById('productImage');
+            
+            // Reiniciar validación de imagen
+            imageInput.removeAttribute('required');
+            
+            if (productId) {
+                title.innerHTML = '<i class="fas fa-edit"></i> Editar Producto';
+                // Cargar datos del producto
+                const producto = productosData.find(p => p.id === productId);
+                if (producto) {
+                    document.getElementById('productId').value = producto.id;
+                    document.getElementById('productName').value = producto.nombre;
+                    document.getElementById('productPrice').value = producto.precio;
+                    document.getElementById('productCategory').value = producto.categoria;
+                    
+                    // Cargar subcategorías según la categoría
+                    updateSubcategories(producto.categoria, producto.subcategoria);
+                    
+                    // Construir la ruta correcta de la imagen
+                    let imagePath = producto.imagen;
+                    if (!imagePath.startsWith('images/') && !imagePath.startsWith('/static/images/')) {
+                        imagePath = 'images/' + imagePath;
+                    }
+                    
+                    // Mostrar imagen actual
+                    const preview = document.getElementById('imagePreview');
+                    preview.innerHTML = `<img src="/static/${imagePath}" alt="${producto.nombre}" 
+                                         onerror="this.parentElement.innerHTML='<span>Vista previa</span>'">`;
+                }
+            } else {
+                title.innerHTML = '<i class="fas fa-plus"></i> Agregar Producto';
+                form.reset();
+                document.getElementById('imagePreview').innerHTML = '<span>Vista previa</span>';
+                document.getElementById('productSubcategory').innerHTML = '<option value="">Seleccionar subcategoría</option>';
+            }
+            
+            modal.style.display = 'block';
+        }
+        
+        function closeModal() {
+            document.getElementById('productModal').style.display = 'none';
+        }
+        
+        function updateSubcategories(categoriaId, selectedSubcategory = '') {
+            const subcategorySelect = document.getElementById('productSubcategory');
+            subcategorySelect.innerHTML = '<option value="">Seleccionar subcategoría</option>';
+            
+            if (categoriaId && filtrosData[categoriaId]) {
+                filtrosData[categoriaId].forEach(filtro => {
+                    const option = document.createElement('option');
+                    option.value = filtro;
+                    option.textContent = filtro;
+                    if (selectedSubcategory === filtro) {
+                        option.selected = true;
+                    }
+                    subcategorySelect.appendChild(option);
+                });
+            }
+        }
+        
+        async function submitProductForm() {
+            const form = document.getElementById('productForm');
+            const formData = new FormData(form);
+            
+            // Validaciones básicas
+            if (!formData.get('productName') || !formData.get('productPrice') || !formData.get('productCategory')) {
+                showToast('Por favor, completa todos los campos obligatorios', 'error');
+                return;
+            }
+            
+            showLoading();
+            try {
+                const url = currentProductId ? `/admin/api/productos/${currentProductId}` : '/admin/api/productos';
+                const method = currentProductId ? 'PUT' : 'POST';
+                
+                const response = await fetch(url, {
+                    method: method,
+                    body: formData
+                });
+                
+                if (response.ok) {
+                    showToast(currentProductId ? 'Producto actualizado correctamente' : 'Producto agregado correctamente', 'success');
+                    closeModal();
+                    await loadInitialData();
+                } else {
+                    const error = await response.json();
+                    showToast(error.message || 'Error al guardar el producto', 'error');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                showToast('Error de conexión. Intenta nuevamente.', 'error');
+            } finally {
+                hideLoading();
+            }
+        }
+        
+        function editProduct(id) {
+            showProductForm(id);
+        }
+        
+        async function deleteProduct(id) {
+            if (!confirm('¿Estás seguro de que deseas eliminar este producto?')) {
+                return;
+            }
+            
+            showLoading();
+            try {
+                const response = await fetch(`/admin/api/productos/${id}`, {
+                    method: 'DELETE'
+                });
+                
+                if (response.ok) {
+                    showToast('Producto eliminado correctamente', 'success');
+                    await loadInitialData();
+                } else {
+                    const error = await response.json();
+                    showToast(error.message || 'Error al eliminar el producto', 'error');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                showToast('Error de conexión. Intenta nuevamente.', 'error');
+            } finally {
+                hideLoading();
+            }
+        }
+        
+        // Funciones para categorías
+        async function addCategory(e) {
+            e.preventDefault();
+            
+            const categoriaId = document.getElementById('categoriaId').value.trim();
+            const categoriaNombre = document.getElementById('categoriaNombre').value.trim();
+            
+            if (!categoriaId || !categoriaNombre) {
+                showToast('Por favor, completa todos los campos', 'error');
+                return;
+            }
+            
+            showLoading();
+            try {
+                const response = await fetch('/admin/api/categorias', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        id: categoriaId,
+                        nombre: categoriaNombre
+                    })
+                });
+                
+                if (response.ok) {
+                    showToast('Categoría agregada correctamente', 'success');
+                    document.getElementById('categoriaForm').reset();
+                    await loadInitialData();
+                    recargarCategoriasEnTienda(); // Añadir esta línea
+                } else {
+                    const error = await response.json();
+                    showToast(error.message || 'Error al agregar la categoría', 'error');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                showToast('Error de conexión. Intenta nuevamente.', 'error');
+            } finally {
+                hideLoading();
+            }
+        }
+        
+        function editCategory(categoryId) {
+            const categoria = categoriasData.find(c => c.id === categoryId);
+            if (categoria) {
+                document.getElementById('categoriaId').value = categoria.id;
+                document.getElementById('categoriaNombre').value = categoria.nombre;
+                
+                // Mostrar botones de actualizar y cancelar
+                document.getElementById('updateCategoryBtn').style.display = 'inline-block';
+                document.getElementById('cancelEditBtn').style.display = 'inline-block';
+                
+                // Ocultar botón de agregar
+                document.querySelector('#categoriaForm button[type="button"]').style.display = 'none';
+                
+                // Deshabilitar el campo ID
+                document.getElementById('categoriaId').disabled = true;
+                
+                currentCategoryId = categoryId;
+            }
+        }
+        
+        async function updateCategory(e) {
+            e.preventDefault();
+            
+            const categoriaNombre = document.getElementById('categoriaNombre').value.trim();
+            
+            if (!categoriaNombre) {
+                showToast('Por favor, ingresa un nombre para la categoría', 'error');
+                return;
+            }
+            
+            showLoading();
+            try {
+                const response = await fetch(`/admin/api/categorias/${currentCategoryId}`, {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        nombre: categoriaNombre
+                    })
+                });
+                
+                if (response.ok) {
+                    showToast('Categoría actualizada correctamente', 'success');
+                    cancelEdit();
+                    await loadInitialData();
+                    recargarCategoriasEnTienda(); // Añadir esta línea
+                } else {
+                    const error = await response.json();
+                    showToast(error.message || 'Error al actualizar la categoría', 'error');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                showToast('Error de conexión. Intenta nuevamente.', 'error');
+            } finally {
+                hideLoading();
+            }
+        }
+        
+        function cancelEdit() {
+            document.getElementById('categoriaForm').reset();
+            document.getElementById('categoriaId').disabled = false;
+            
+            // Mostrar botón de agregar
+            document.querySelector('#categoriaForm button[type="button"]').style.display = 'inline-block';
+            
+            // Ocultar botones de actualizar y cancelar
+            document.getElementById('updateCategoryBtn').style.display = 'none';
+            document.getElementById('cancelEditBtn').style.display = 'none';
+            
+            currentCategoryId = null;
+        }
+        
+        async function deleteCategory(categoryId) {
+            if (!confirm('¿Estás seguro de que deseas eliminar esta categoría? Los productos en esta categoría quedarán sin categoría asignada.')) {
+                return;
+            }
+            
+            showLoading();
+            try {
+                const response = await fetch(`/admin/api/categorias/${categoryId}`, {
+                    method: 'DELETE'
+                });
+                
+                if (response.ok) {
+                    showToast('Categoría eliminada correctamente', 'success');
+                    await loadInitialData();
+                    recargarCategoriasEnTienda(); // Añadir esta línea
+                } else {
+                    const error = await response.json();
+                    showToast(error.message || 'Error al eliminar la categoría', 'error');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                showToast('Error de conexión. Intenta nuevamente.', 'error');
+            } finally {
+                hideLoading();
+            }
+        }
+        
+        // Funciones para filtros
+        function loadFilters() {
+            const categoriaId = document.getElementById('filtroCategoria').value;
+            const filtrosContainer = document.getElementById('filtros-container');
+            
+            if (categoriaId) {
+                filtrosContainer.style.display = 'block';
+                renderFiltros(categoriaId);
+            } else {
+                filtrosContainer.style.display = 'none';
+            }
+        }
+        
+        function renderFiltros(categoriaId) {
+    const filtrosList = document.getElementById('filtros-list');
+    filtrosList.innerHTML = '<h3>Filtros Existentes</h3>';
+
+    if (!filtrosData[categoriaId] || filtrosData[categoriaId].length === 0) {
+        filtrosList.innerHTML += '<p>No hay filtros para esta categoría</p>';
+        return;
+    }
+
+    filtrosData[categoriaId].forEach(filtro => {
+        const item = document.createElement('div');
+        item.className = 'filtro-item';
+        const filtroId = filtro.replace(/\s+/g, '-');
+        item.innerHTML = `
+            <span class="filtro-nombre" id="filtro-text-${categoriaId}-${filtroId}">${filtro}</span>
+            <input type="text" class="filtro-edit-input" id="filtro-edit-${categoriaId}-${filtroId}" 
+                   value="${filtro}" style="display: none; margin-right: 10px; padding: 5px; border: 1px solid var(--pink-light); border-radius: 5px;">
+            <div class="filtro-actions">
+                <button class="btn-action btn-edit" onclick="editFilter('${categoriaId}', '${filtro}')">
+                    <i class="fas fa-edit"></i> Editar
+                </button>
+                <button class="btn-action btn-delete" onclick="deleteFilter('${categoriaId}', '${filtro}')">
+                    <i class="fas fa-trash"></i> Eliminar
+                </button>
+                <button class="btn-action btn-submit" id="save-btn-${categoriaId}-${filtroId}" 
+                        onclick="saveFilter('${categoriaId}', '${filtro}')" style="display: none;">
+                    <i class="fas fa-save"></i> Guardar
+                </button>
+                <button class="btn-action btn-edit" id="cancel-btn-${categoriaId}-${filtroId}" 
+                        onclick="cancelEditFilter('${categoriaId}', '${filtro}')" style="display: none;">
+                    <i class="fas fa-times"></i> Cancelar
+                </button>
+            </div>
+        `;
+        filtrosList.appendChild(item);
+    });
+}
+        
+        async function addFilter(e) {
+            e.preventDefault();
+            
+            const categoriaId = document.getElementById('filtroCategoria').value;
+            const filtroNombre = document.getElementById('filtroNombre').value.trim();
+            
+            if (!categoriaId || !filtroNombre) {
+                showToast('Por favor, completa todos los campos', 'error');
+                return;
+            }
+            
+            showLoading();
+            try {
+                const response = await fetch(`/admin/api/filtros/${categoriaId}`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        nombre: filtroNombre
+                    })
+                });
+                
+                if (response.ok) {
+                    showToast('Filtro agregado correctamente', 'success');
+                    document.getElementById('filtroForm').reset();
+                    await loadInitialData();
+                    recargarCategoriasEnTienda(); // Añadir esta línea
+                    renderFiltros(categoriaId);
+                } else {
+                    const error = await response.json();
+                    showToast(error.message || 'Error al agregar el filtro', 'error');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                showToast('Error de conexión. Intenta nuevamente.', 'error');
+            } finally {
+                hideLoading();
+            }
+        }
+        
+        async function deleteFilter(categoriaId, filtroNombre) {
+            if (!confirm('¿Estás seguro de que deseas eliminar este filtro?')) {
+                return;
+            }
+            
+            showLoading();
+            try {
+                const response = await fetch(`/admin/api/filtros/${categoriaId}/${encodeURIComponent(filtroNombre)}`, {
+                    method: 'DELETE'
+                });
+                
+                if (response.ok) {
+                    showToast('Filtro eliminado correctamente', 'success');
+                    await loadInitialData();
+                    recargarCategoriasEnTienda(); // Añadir esta línea
+                    renderFiltros(categoriaId);
+                } else {
+                    const error = await response.json();
+                    showToast(error.message || 'Error al eliminar el filtro', 'error');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                showToast('Error de conexión. Intenta nuevamente.', 'error');
+            } finally {
+                hideLoading();
+            }
+        }
+        
+        // Función para recargar categorías en la tienda
+        function recargarCategoriasEnTienda() {
+            // Hacer una llamada a la tienda principal para recargar categorías
+            fetch('/recargar-categorias', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    showToast('Cambios aplicados en la tienda', 'success');
+                }
+            })
+            .catch(error => {
+                console.error('Error recargando categorías:', error);
+            });
+        }
+        
+        // Event listeners
+        document.getElementById('logoutBtn').addEventListener('click', function() {
+            if (confirm('¿Estás seguro de que deseas cerrar sesión?')) {
+                window.location.href = '/admin/logout';
+            }
+        });
+        
+        // Vista previa de imagen
+        document.getElementById('productImage').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            const preview = document.getElementById('imagePreview');
+            
+            if (file) {
+                if (file.size > 16 * 1024 * 1024) { // 16MB
+                    showToast('El archivo es demasiado grande. Máximo 16MB.', 'error');
+                    this.value = '';
+                    preview.innerHTML = '<span>Vista previa</span>';
+                    return;
+                }
+                
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    preview.innerHTML = `<img src="${e.target.result}" alt="Vista previa">`;
+                };
+                reader.readAsDataURL(file);
+            } else {
+                preview.innerHTML = '<span>Vista previa</span>';
+            }
+        });
+        
+        // Cerrar modal al hacer clic fuera de él
+        window.addEventListener('click', function(e) {
+            const modal = document.getElementById('productModal');
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+        
+        // Inicializar la aplicación
+        document.addEventListener('DOMContentLoaded', function() {
+            loadInitialData();
+        });
+
+        function editFilter(categoriaId, filtroName) {
+    const filtroId = filtroName.replace(/\s+/g, '-');
+    document.getElementById(`filtro-text-${categoriaId}-${filtroId}`).style.display = 'none';
+    document.getElementById(`filtro-edit-${categoriaId}-${filtroId}`).style.display = 'inline-block';
+    document.querySelector(`#filtro-text-${categoriaId}-${filtroId}`).parentElement.querySelector('.btn-edit').style.display = 'none';
+    document.querySelector(`#filtro-text-${categoriaId}-${filtroId}`).parentElement.querySelector('.btn-delete').style.display = 'none';
+    document.getElementById(`save-btn-${categoriaId}-${filtroId}`).style.display = 'inline-block';
+    document.getElementById(`cancel-btn-${categoriaId}-${filtroId}`).style.display = 'inline-block';
+}
+
+function cancelEditFilter(categoriaId, filtroName) {
+    const filtroId = filtroName.replace(/\s+/g, '-');
+    const input = document.getElementById(`filtro-edit-${categoriaId}-${filtroId}`);
+    input.value = filtroName;
+    input.style.display = 'none';
+    document.getElementById(`filtro-text-${categoriaId}-${filtroId}`).style.display = 'inline';
+    document.querySelector(`#filtro-text-${categoriaId}-${filtroId}`).parentElement.querySelector('.btn-edit').style.display = 'inline-flex';
+    document.querySelector(`#filtro-text-${categoriaId}-${filtroId}`).parentElement.querySelector('.btn-delete').style.display = 'inline-flex';
+    document.getElementById(`save-btn-${categoriaId}-${filtroId}`).style.display = 'none';
+    document.getElementById(`cancel-btn-${categoriaId}-${filtroId}`).style.display = 'none';
+}
+
+async function saveFilter(categoriaId, filtroName) {
+    const filtroId = filtroName.replace(/\s+/g, '-');
+    const nuevoNombre = document.getElementById(`filtro-edit-${categoriaId}-${filtroId}`).value.trim();
+
+    if (!nuevoNombre) {
+        showToast('El nombre del filtro no puede estar vacío', 'error');
+        return;
+    }
+
+    showLoading();
+    try {
+        const response = await fetch(`/admin/api/filtros/${categoriaId}/${encodeURIComponent(filtroName)}`, {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ nombre: nuevoNombre })
+        });
+
+        if (response.ok) {
+            showToast('Filtro actualizado correctamente', 'success');
+            await loadInitialData();
+            recargarCategoriasEnTienda();
+            loadFilters(); // Recargar vista
+        } else {
+            const error = await response.json();
+            showToast(error.message || 'Error al actualizar el filtro', 'error');
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        showToast('Error de conexión. Intenta nuevamente.', 'error');
+    } finally {
+        hideLoading();
+    }
+}
+    </script>
+</body>
+</html>

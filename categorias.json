@@ -1,0 +1,61 @@
+{
+  "categorias": [
+    {
+      "id": "todos",
+      "nombre": "Todos los productos"
+    },
+    {
+      "id": "tintes",
+      "nombre": "Tintes"
+    },
+    {
+      "id": "decolorantes",
+      "nombre": "Decolorantes"
+    },
+    {
+      "id": "shampoo",
+      "nombre": "Higiene"
+    },
+    {
+      "id": "maquillaje",
+      "nombre": "Maquillaje"
+    },
+    {
+      "id": "unas",
+      "nombre": "Uñas"
+    }
+  ],
+  "filtros": {
+    "tintes": [
+      "Yellow",
+      "Kuul",
+      "Anven",
+      "Hidra",
+      "Colortech",
+      "Majirel",
+      "Alfapar"
+    ],
+    "decolorantes": [
+      "Decolorantes",
+      "Peroxidos"
+    ],
+    "shampoo": [
+      "Shampoo",
+      "Tratamientos",
+      "Mascarillas"
+    ],
+    "maquillaje": [
+      "Bissú",
+      "Apple",
+      "Pink Up",
+      "Amor Us",
+      "Prosa"
+    ],
+    "unas": [
+      "Tijeras",
+      "Acrilicos",
+      "Alicates",
+      "Manicure y Pedicure"
+    ]
+  }
+}
